@@ -1,0 +1,173 @@
+@charset 'utf-8';
+/* ==========================================================================
+Author        :  Arif Lutfhansah
+Create        :  21 Agustus 2017
+Last Update   :  21 Agustus 2017
+
+Source  :
+  1: Arif Framework The MIT License (MIT) Copyright (c) Arif Lutfhansah
+  2: Bootstrap Framework The MIT License (MIT) Copyright (c) Bootstrap
+  3: Materialize Framework The MIT License (MIT) Copyright (c) 2014-2017 Materialize
+
+Contents  :
+  1: Header Section
+
+  Copyright (c) 2017 Arif Lutfhansah
+  
+========================================================================== */
+
+/*
+  Header
+------------------------------------- */
+header {
+	position: fixed;
+	width: 100%;
+	height: 6vw;
+	background-color: #FFF;
+	z-index: 10;
+	.inner {
+		width: 90%;
+		height: 100%;
+		margin: 0 auto;
+	}
+}
+
+/* ----- Logo ----- */
+.logo {
+	display: inline-flex;
+    align-items: center;
+	width: 50%;
+	height: 100%;
+	h1 {
+		font-size: 19.5px;
+		font-weight: 500;
+		@include transition(.4s);
+		&:hover {
+			opacity: .7;
+		}
+	}
+}
+
+/* ----- Navigation ----- */
+.navigation {
+	@extend .logo;
+	justify-content: flex-end;
+	li {
+		display: inline-block;
+		padding: 0 20px;
+		&.active {
+			a {
+				opacity: 1;
+			}
+		}
+		&:hover {
+			a {
+				opacity: 1;
+			}
+		}
+		a {
+			font-size: 14px;
+			font-weight: 500;
+			opacity: 0.3;
+			@include transition(.4s);
+		}
+	}
+}
+
+/* ----- Sidebar Header ----- */
+.header-cover {
+	background-image: url(../images/background-avatar.jpg);
+	background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    .top-bar {
+    	height: 25px;
+    	background: #0000001a;
+    }
+    .avatar {
+    	img {
+    		width: 65px;
+		    height: 65px;
+		    margin: 15px;
+		    border-radius: 50%;
+		    -webkit-transition: all 0.2s ease-in-out;
+		    -o-transition: all 0.2s ease-in-out;
+		    transition: all 0.2s ease-in-out;
+    	}
+    }
+    .email {
+    	display: block;
+    	color: #FFF;
+    	font-size: 14px;
+    	background-color: rgba(0, 0, 0, 0.2);
+    }
+}
+
+/* ----- Navigation Mobile ----- */
+.navbar-toggle {
+	display: none;
+    position: absolute;
+    top: 20px;
+    left: 24px;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+    .sr-only {
+	    position: absolute;
+	    width: 1px;
+	    height: 1px;
+	    margin: -1px;
+	    padding: 0;
+	    overflow: hidden;
+	    clip: rect(0, 0, 0, 0);
+	    border: 0;
+	}
+	.icon-bar {
+	    display: block;
+	    width: 22px;
+	    height: 2px;
+	    border-radius: 1px;
+	    background-color: #000;
+	    + .icon-bar {
+		    margin-top: 4px;
+		}
+	}
+}
+
+
+/*
+  Media Query
+------------------------------------- */
+@media screen and (max-width: 768px) {
+	/*
+	  Header
+	------------------------------------- */
+	header {
+		top: 0;
+		height: 54px;
+		-webkit-box-shadow: 0 2px 2px -2px rgba(0,0,0,.15);
+		-moz-box-shadow: 0 2px 2px -2px rgba(0,0,0,.15);
+    	box-shadow: 0 2px 2px -2px rgba(0,0,0,.15);
+	}
+	/* ----- Logo ----- */
+	.logo {
+		display: block;
+		float: none;
+		width: 65%;
+		margin: 0 auto;
+		h1 {
+			margin: 12px 0;
+			text-align: center;
+		}
+	}
+	/* ----- Navigation ----- */
+	.navigation {
+		display: none;
+	}
+	/* ----- Navigation Mobile ----- */
+	.navbar-toggle {
+		display: block;
+	}
+}

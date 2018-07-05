@@ -1,0 +1,162 @@
+@charset 'utf-8';
+/* ==========================================================================
+Author        :  Arif Lutfhansah
+Create        :  20 April 2018
+Last Update   :  20 April 2018
+
+Contents  :
+  1: Body Section
+  
+========================================================================== */
+
+/*
+  Color
+-------------------------------------*/
+section {
+	padding: 150px 0;
+}
+
+/* --- Main Visual --- */
+.mainvisual {
+	margin-top: 112px;
+	padding: 0;
+	img {
+		width: 100%;
+		object-fit: cover;
+	}
+}
+/* --- Title --- */
+.title {
+	margin-bottom: 20px;
+	color: $color;
+	font-size: 40px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+/* --- Layout Image-Description --- */
+.picture {
+	width: 377px;
+	margin: 80px 70px 0;
+}
+.description {
+	width: 730px;
+	.caption {
+		color: #2F565F;
+		font-size: 20px;
+		line-height: 33px;
+	}
+}
+
+/* --- About --- */
+.about {
+	background-image: url('../images/bg01.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+/* --- Competition --- */
+.competition {
+	padding: 0;
+	img {
+		width: 100%;
+		object-fit: cover;
+	}
+}
+
+/* --- Article --- */
+.article {
+	text-align: center;
+}
+.list {
+	margin: 40px 0;
+}
+.item {
+	float: left;
+	width: 300px;
+	margin: 20px 60px;
+	&:nth-child(2) {
+		@include animation-delay(.2s);
+	}
+	&:nth-child(3) {
+		@include animation-delay(.3s);
+	}
+	&:nth-child(4) {
+		@include animation-delay(.4s);
+	}
+	&:nth-child(5) {
+		@include animation-delay(.5s);
+	}
+	&:nth-child(6) {
+		@include animation-delay(.6s);
+	}
+}
+.caption {
+	margin-top: 7px;
+	color: #2F565F;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 28px;
+}
+.btn {
+	&.more {
+		@include animation-delay(.8s);
+	}
+}
+
+/* --- Video --- */
+.video {
+	text-align: center;
+	background-image: url('../images/bg02.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+/* --- Registration --- */
+.registration {
+	.description {
+		position: relative;
+    top: 120px;
+	}
+	.picture {
+		margin: 0 70px;
+	}
+	.caption {
+		margin-bottom: 40px;
+	}
+}
+
+/* --- Sponsor --- */
+.sponsor {
+	padding: 60px 0 80px;
+	background-color: #F5F5F5;
+	text-align: center;
+	.title {
+		padding-bottom: 20px;
+		color: #022A30;
+		font-size: 18px;
+	}
+	img {
+		display: inline-block;
+		width: 250px;
+		padding: 0 30px;
+		margin: 0 auto;
+	}
+}
+
+/* --- Button --- */
+.btn {
+	padding: 5px 25px 8px;
+	color: #FFF;
+	font-size: 20px;
+	font-weight: 700;
+	background-color: #EE6163;
+	border-radius: 7px;
+	border: 1px solid #EE6163;
+	@include transition(.4s);
+	&:hover {
+		padding: 5px 35px 8px;
+		color: #EE6163;
+		background-color: #FFF;
+	}
+}
+

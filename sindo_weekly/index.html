@@ -432,7 +432,9 @@
 	<script>
 		$(document).ready(function() {
       /* Splash Screen */
-      $(".splash").fadeOut(5800, function() {       
+      document.body.style.overflow = 'hidden';
+      $(".splash").fadeOut(5800, function() {
+        document.body.style.overflow = 'visible';
       });
       /* Dropdown */
       $(".dropdown-trigger").dropdown({

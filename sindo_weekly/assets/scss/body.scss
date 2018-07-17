@@ -136,9 +136,19 @@ Contents  :
       box-shadow: 0 -1px 0 #b70000;
     }
   }
+  .btn {
+    display: block;
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    margin: 30px auto 50px;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
 }
 .latest-list {
   margin-top: 40px;
+  border-bottom: 1px solid #e8e8e8;
   .col-md-4 {
     padding: 0 32px;
     margin-bottom: 30px;

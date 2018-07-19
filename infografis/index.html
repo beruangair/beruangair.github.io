@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta SEO Default -->
+	<title>Infografis</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="title" content="Dewan Perwakilan Rakyat Indonesia">
+	<meta name="description" content="Dewan Perwakilan Rakyat Indonesia">		
+	<meta name="image_src" content="https://cdn.sindonews.net/gambar-cover-infografis-1200x628.jpg">
+	<meta name="google-site-verification" content="mFQQxfgAE-mgZvZqimPAlFO2VROmqoQi-KJ2LOfvuWE">
+	<meta name="googlebot-news" content="noindex, nofollow">
+	<meta name="msvalidate.01" content="C5F11F9E74C25BC1586575EDA0B810C9">
+
+	<!-- Start CSS Link From Here -->
+	<link rel="stylesheet" href="assets/css/styles.css"> <!-- Styles -->
+	<link rel="stylesheet" href="assets/css/mediaquery-HDPI.css" media="screen and (min-width: 1083px) and (max-width: 1290px)"> <!-- HDPI Screen -->
+	<link rel="stylesheet" href="assets/css/mediaquery-MDPI.css" media="screen and (min-width: 993px) and (max-width: 1082px)"> <!-- MDPI Screen -->
+	<link rel="stylesheet" href="assets/css/mediaquery-SDPI.css" media="screen and (min-width: 769px) and (max-width: 992px)"> <!-- SDPI Screen -->
+	<link rel="stylesheet" href="assets/css/mediaquery-mobile.css" media="screen and (max-width: 768px)"> <!-- Mobile Screen -->
+	<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet"> -->
+	<!-- Start CSS Link End Here -->
+</head>
+<body>
+  <!-- Splash Screen -->
+  <section class="splash">
+    <div id="loading-wrapper">
+    <div id="loading-text">INFOGRAFIS</div>
+    <div id="loading-content"></div>
+  </section>
+  <header>
+    <nav>
+      <div class="container">
+        <a href="" class="logo"><img src="assets/images/logo_infografis.png" alt=""></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li class="active"><a href="">Home</a></li>
+          <li>
+            <a class="dropdown-trigger" href="#!" data-target="dropdown1">Indonesia<i class="material-icons right">arrow_drop_down</i></a>
+            <ul id="dropdown1" class="dropdown-content">
+              <li><a href="#!">Indonesia</a></li>
+              <li><a href="#!">Educare</a></li>
+              <li><a href="#!">Insight</a></li>
+            </ul>
+          </li>
+          <li><a href="">Global</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Slicknav -->
+    <section class="slicknav">
+      <ul id="slide-out" class="sidenav">
+        <li><div class="user-view">
+          <div class="background">
+            <img src="images/office.jpg">
+          </div>
+          <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
+          <a href="#name"><span class="white-text name">John Doe</span></a>
+          <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+        </div></li>
+        <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+        <li><a href="#!">Second Link</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="subheader">Subheader</a></li>
+        <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+      </ul>
+      <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </section>
+  </header>
+	<main>
+    <!-- Floating Button -->
+    <section class="floating-button">
+      <div class="fixed-action-btn">
+        <a class="btn-floating btn-large red">
+          <i class="large material-icons">share</i>
+        </a>
+        <ul>
+          <li><a class="btn-floating facebook"><img src="assets/images/icon_facebook.png" alt=""></a></li>
+          <li><a class="btn-floating twitter"><img src="assets/images/icon_twitter.png" alt=""></a></li>
+          <li><a class="btn-floating googleplus"><img src="assets/images/icon_googleplus.png" alt=""></a></li>
+        </ul>
+      </div>
+    </section>
+    <section class="carousel">
+      <div class="carousel carousel-slider center">
+      <div class="carousel-fixed-item center">
+        <a class="btn waves-effect white grey-text darken-text-2">button</a>
+      </div>
+      <div class="carousel-item red white-text" href="#one!">
+        <h2>First Panel</h2>
+        <p class="white-text">This is your first panel</p>
+      </div>
+      <div class="carousel-item amber white-text" href="#two!">
+        <h2>Second Panel</h2>
+        <p class="white-text">This is your second panel</p>
+      </div>
+      <div class="carousel-item green white-text" href="#three!">
+        <h2>Third Panel</h2>
+        <p class="white-text">This is your third panel</p>
+      </div>
+      <div class="carousel-item blue white-text" href="#four!">
+        <h2>Fourth Panel</h2>
+        <p class="white-text">This is your fourth panel</p>
+      </div>
+    </div>
+    </section>
+	</main>
+	<footer>
+	</footer>
+	<script src='assets/js/jquery-1.10.2.min.js'></script> <!-- jQuery -->
+  <script src='assets/js/materialize.min.js'></script> <!-- Materialize -->
+  <script  src="assets/js/splash-screen.js"></script>
+	<script>
+		$(document).ready(function() {
+      document.body.style.overflow = 'hidden';
+      $(".splash").fadeOut(1, function() {
+        document.body.style.overflow = 'visible';
+      });
+      /* Dropdown */
+      $(".dropdown-trigger").dropdown({
+        hover: true
+      });
+      /* Floating Button */
+      $('.fixed-action-btn').floatingActionButton();
+      /* Carousel */
+      $('.carousel.carousel-slider').carousel({
+        fullWidth: true,
+        indicators: true
+      });
+      /* Sidenav */
+      $('.sidenav').sidenav();
+		});
+	</script>
+</body>
+</html>

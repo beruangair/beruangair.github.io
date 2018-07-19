@@ -1,0 +1,38 @@
+@charset 'utf-8';
+/* ==========================================================================
+Author        :  Arif Lutfhansah
+Create        :  20 April 2018
+Last Update   :  20 April 2018
+
+Source  :
+  1: Arif Framework The MIT License (MIT) Copyright (c) Arif Lutfhansah
+  2: Bootstrap Framework The MIT License (MIT) Copyright (c) Bootstrap
+  3: Materialize Framework The MIT License (MIT) Copyright (c) 2014-2017 Materialize
+
+Contents  :
+  1: Header Section
+
+  Copyright (c) 2018 Arif Lutfhansah
+  
+========================================================================== */
+
+/*
+  Header
+-------------------------------------*/
+
+/* --- Logo --- */
+.logo {
+  img {
+    padding: 34px 0;
+  }
+}
+/* --- Nav --- */
+nav {
+  ul {
+    float: right;
+  }
+}
+/* --- Slicknav --- */
+.slicknav {
+  display: none;
+}

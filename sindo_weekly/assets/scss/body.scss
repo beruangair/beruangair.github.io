@@ -12,9 +12,6 @@ Contents  :
 /*
   Body
 -------------------------------------*/
-
-
-
 /* --- R Center --- */
 .r-center {
   display: block;
@@ -26,9 +23,14 @@ Contents  :
 }
 /* --- News --- */
 .news {
+  &:nth-child(1) {
+    .category {
+      padding-top: 5px;
+    }
+  }
   img {
     width: 100%;
-    height: 219px;
+    height: auto;
     overflow: hidden;
   }
   .category {
@@ -103,10 +105,10 @@ Contents  :
   }
 }
 .small {
-  margin-bottom: 20px;
+  margin: 20px 0;
   .news {
     img {
-      height: 140px;
+      height: 130px;
     }
   }
 }
@@ -152,8 +154,10 @@ Contents  :
   margin-top: 40px;
   border-bottom: 1px solid #e8e8e8;
   .col-md-4 {
+    height: 360px;
     padding: 0 32px;
     margin-bottom: 30px;
+    overflow: hidden;
   }
 }
 /*

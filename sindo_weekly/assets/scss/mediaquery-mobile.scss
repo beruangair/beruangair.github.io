@@ -20,204 +20,174 @@ Contents  :
 /*
   Header
 -------------------------------------*/
-header {
-	height: 62px;
-}
+/* --- Logo --- */
 .logo {
-	position: relative;
-	left: 15px;
-	img {
-		margin: 27.5px auto;
-		zoom: .6;
-	}
+  img {
+    padding: 23px 0;
+    zoom: .4;
+  }
 }
-/* --- Navigation ---- */
+/* --- Nav --- */
 nav {
-	top: 0;
-	width: 100%;
-	display: none;
-	float: none;
-	background-color: #F4F4F4;
-	ul {
-		padding-bottom: 15px;
-	}
-	li {
-		display: block;
-		a {
-			padding: 6px 12px;
-	    font-size: 16px;
-	    text-align: center;
-		}
-	}
+  height: 55px;
+  a.sidenav-trigger {
+    height: 55px;
+    line-height: 55px;
+    i {
+      height: 55px;
+      line-height: 55px;
+    }
+  }
 }
-.navbar {
-	display: block;
-	.navbar-toggle {
-	    position: relative;
-	    top: 14px;
-	    right: 14px;
-	    float: right;
-	    padding: 9px 10px;
-	    background-color: rgba(0, 0, 0, 0);
-	    background-image: none;
-	    border: 1px solid rgba(0, 0, 0, 0);
-	    border-radius: 4px;
-	    border-color: #ddd;
-      outline: none;
-	    .sr-only {
-		    position: absolute;
-		    width: 1px;
-		    height: 1px;
-		    margin: -1px;
-		    padding: 0;
-		    overflow: hidden;
-		    clip: rect(0, 0, 0, 0);
-		    border: 0;
-		}
-		.icon-bar {
-		    display: block;
-		    width: 22px;
-		    height: 2px;
-		    border-radius: 1px;
-		    background-color: #888;
-		    + .icon-bar {
-			    margin-top: 4px;
-			}
-		}
-	}
+#nav-mobile {
+  display: none;
+}
+/* --- Slicknav --- */
+.slicknav {
+  display: block;
 }
 
 /*
-  Body
+  Main
 -------------------------------------*/
-
-/* --- Main Visual --- */
-.mainvisual {
-  margin-top: 62px;
+.col-md-9, .col-md-6, .col-md-3 {
+  width: 100%;
+  padding: 0;
 }
-
-/* --- Layout Image-Description --- */
-.picture {
-	float: none;
-	width: 100%;
-	margin: 0 0 30px 0;
-	img {
-		margin: 0 auto;
-	}
+/* --- Carousel --- */
+.carousel {
+  height: 500px;
+  .carousel-item {
+    top: -150px;
+    width: 100%;
+    height: auto;
+    .category {
+      padding: 0.5em 1em 0.2em;
+      font-size: 12px;
+    }
+    .title {
+      padding: 0 8px;
+      margin: 20px 0 10px;
+      font-size: 24px;
+    }
+    .caption {
+      padding: 0 8px;
+      font-size: 16px;
+    }
+  }
 }
-.description {
-	float: none;
-	width: 100%;
-	text-align: center;
+/* --- R Center --- */
+.r-center {
+  width: 100%;
+  img {
+    width: 100%;
+  }
 }
-
-/* --- About --- */
-.about {
-	.description {
-		.title, .caption {
-			padding: 0 20px;
-		}
-		.title {
-			 margin-bottom: 10px;
-  	   margin-top: 40px;
-			 font-size: 22px;
-		}
-		.caption {
-			font-size: 16px;
-		}
-	}
+/* --- News --- */
+.news {
+  .category, .title, .caption, .author {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .title {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .author {
+    padding-top: 20px;
+  }
 }
-
-/* --- Article --- */
-.article {
-	padding: 30px 0;
-	.title {
-		font-size: 22px;
-	}
-	.item {
-		width: 100%;
-		margin: 10px 0 20px;
-	}
-	.caption {
-		font-size: 14px;
-	}
-	img {
-		width: 100%;
-	}
+.big {
+  .news {
+    .title {
+      font-size: 26px;
+      line-height: 32px;
+    }
+  }
 }
-.btn {
-    top: 3px;
-    padding: 3px 16px 6px;
-    font-size: 14px;
+.medium {
+  .news {
+    height: auto;
+    &.col-md-6 {
+      &:nth-child(odd), &:nth-child(even) {
+        padding: 0;
+      }
+    }
+  }
 }
-.registration {
-	padding: 30px 0;
-	.image {
-		float: none;
-		display: block;
-		margin: 0 auto;
-		img {
-			zoom: .4;
-		    margin: 0 auto 90px;
-		    display: block;
-		}
-	}
-	.description {
-		float: none;
-		width: 100%;
-		display: block;
-		margin: 0 auto;
-		.title, .caption {
-			padding: 0 15px
-		}
-		.title {
-			margin-bottom: 10px;
-  			margin-top: 20px;
-			font-size: 22px;
-		}
-		.caption {
-			font-size: 16px;
-		}
-	}
-	.btn {
-		width: 70px;
-		margin: 20px auto 0;
-	    text-align: center;
-	    display: block;
-	}
+.small {
+  .news {
+    margin-bottom: 20px;
+    &:nth-child(odd), &:nth-child(even) {
+      padding: 0;
+    }
+    img {
+      height: auto;
+    }
+  }
 }
-.video {
-	padding: 30px 0;
-	.title {
-		font-size: 22px;
-	}
-	.item {
-		.caption {
-			font-size: 14px;
-		}
-	}
-	video {
-		width: 70%;
-	}
+/* --- Latest --- */
+.latest-list {
+  .col-md-4 {
+    height: auto;
+    margin-bottom: 20px;
+  }
 }
-.sponsor {
-	img {
-		&:first-of-type {
-			margin-bottom: 50px;
-		}
-	}
+/* --- R Side --- */
+.r-side {
+  img {
+    width: 100%;
+  }
 }
 
 /*
   Footer
 -------------------------------------*/
-/* --- Sosmed --- */
-.sosmed {
-	i {
-	    zoom: .3;
-	}
+footer {
+  padding: 1.5em 1em 2em;
+}
+/* --- Logo Footer --- */
+.logo-footer {
+  text-align: center;
+}
+/* --- Nav Footer --- */
+.nav-footer {
+  padding: 0 10px;
+  ul {
+    li {
+      display: block;
+      padding: 0;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+  }
+}
+/* --- Contributor --- */
+.contributor {
+  text-align: center;
+  .col-md-2 {
+    height: 40px;
+  }
+}
+/* --- Sitemap --- */
+.sitemap{
+  text-align: center;
+  .col-md-2 {
+    margin-bottom: 12px;
+  }
 }
 /* --- Copyright --- */
 .copyright {
-	font-size: 11px;
+  a {
+    font-size: 10px;
+  }
+  .create-by-arif-lutfhansah {
+    font-size: 10px;
+  }
+  .privacy {
+    line-height: 1.2;
+    li {
+      padding: 0 5px;
+    }
+  }
 }

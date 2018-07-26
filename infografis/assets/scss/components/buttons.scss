@@ -6,7 +6,6 @@
   height: 36px;
   line-height: 36px;
   padding: 0 16px;
-  text-transform: uppercase;
   vertical-align: middle;
   -webkit-tap-highlight-color: transparent;
 }
@@ -87,7 +86,7 @@
 .btn, .btn-large, .btn-small {
   text-decoration: none;
   color: #fff;
-  background-color: #26a69a;
+  background-color: #B70000;
   text-align: center;
   letter-spacing: .5px;
   -webkit-transition: background-color .2s ease-out;
@@ -115,36 +114,10 @@
   transition: background-color .3s;
   cursor: pointer;
   vertical-align: middle;
-  &.red {
-    background-color: #F44336;
-  }
-  &.facebook {
-    background-color: #2196F3;
-    &:hover {
-      background-color: #2196F3;
-    }
-  }
-  &.twitter {
-    background-color: #4CAF50;
-    &:hover {
-      background-color: #4CAF50;
-    }
-  }
-  &.googleplus {
-    background-color: #fdd835;
-    &:hover {
-      background-color: #fdd835;
-    }
-  }
-  img {
-    position: relative;
-    top: 8px;
-    zoom: .45;
-  }
 }
 
 .btn-floating:hover {
-  background-color: #F44336;
+  background-color: #26a69a;
 }
 
 .btn-floating:before {

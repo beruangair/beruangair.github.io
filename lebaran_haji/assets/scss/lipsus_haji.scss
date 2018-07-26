@@ -1,0 +1,323 @@
+@charset 'utf-8';
+/* ==========================================================================
+Author        :  Arif Lutfhansah
+Create        :  29 March 2018
+Last Update   :  29 March 2018
+
+Contents  :
+  1: World Cup 2018 CSS
+  
+========================================================================== */
+
+body, main {
+  background-color: #E4E4E4;
+}
+
+/*
+  Color
+-------------------------------------*/
+$lipsus_haji : #1A852C;
+/* --- Primary ---- */
+.haj {
+  background-color: $lipsus_haji !important;
+}
+.f-haj {
+  color: $lipsus_haji !important;
+}
+.b-haj {
+  border-color: $lipsus_haji !important;
+}
+
+/*
+  Title
+-------------------------------------*/
+.title-underline {
+  border-color: #E2C28B;
+  .caption {
+    padding: 0;
+    border-bottom: 5px solid #E2C28B;
+  }
+}
+
+/*
+  Header Top
+-------------------------------------*/
+.header-top {
+  height: 55px;
+  background-color: #000;
+}
+/* --- Navigation Kanal ---- */
+.nav-kanal {
+  li {
+    &:hover {
+      background: #1A852C;
+    }
+    &:last-of-type {
+      a {
+        width: auto;
+        padding: 18.5px 8px 19.5px;
+      }
+    }
+    a {
+      padding: 18.5px 8px 19.5px;
+      @include transition(.3s);
+    }
+  }
+}
+/* --- Navigation Fixed ---- */
+.navbar-fixed {
+  .kanal-extra {
+    top: 43px;
+    li {
+      background-color: #1382B8;
+    }
+  }
+}
+/* --- Sosial Media Header[Kanal] ---- */
+.sosmed-header {
+  li {
+    a {
+      padding: 15px 8px 13px;
+      color: #FFF;
+      &:hover {
+        color: #1A852C;
+      }
+    }
+  }
+}
+
+/*
+  Header Bottom
+-------------------------------------*/
+.header-bottom {
+  margin-bottom: 30px;
+  background-color: #FFFFFF;
+}
+/* --- Logo ---- */
+.logo {
+  padding: 26px 0 !important;
+  .lipsus_haji {
+    width: 468px;
+    height: 92px;
+    background-position: 1px -86px;
+  }
+}
+/* --- Logo Kemenag ---- */
+.logo-kemenag {
+  padding: 26px;
+}
+
+/*
+  R-Center
+-------------------------------------*/
+.r-center {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+/*
+  Content
+-------------------------------------*/
+.content {
+  width: 830px;
+}
+/* --- List News ---- */
+.list-news {
+  li {
+    &:hover {
+      background-color: #FFF;
+    }
+    .caption {
+      width: 590px;
+      a {
+        &:hover {
+          color: #DDC52B;
+        }
+      }
+      .header {
+        time {
+          color: #FBC02D;
+        }
+      }
+    }
+    .image {
+      cursor: pointer;
+      @include transition(.3s);
+      img {
+        width: 200px;
+        height: 120px;
+      }
+      &:hover {
+        opacity: .7;
+      }
+    }
+  }
+  .mainvisual {
+    padding: 0;
+    border-bottom: none;
+    img {
+      width: 100%;
+      height: auto;
+    }
+    .caption {
+      width: 100%;
+      padding-bottom: 8px;
+      border-bottom: 1px dotted #BDBDBD;
+      .title, .header, .text {
+        padding: 0 15px;
+      }
+    }
+  }
+}
+/* --- Button ---- */
+.btn-block {
+  background-color: #DDC52B;
+  &:hover {
+    background-color: $lipsus_haji;
+  }
+}
+
+
+/*
+  Rightbar
+-------------------------------------*/
+.rightbar {
+  width: 410px;
+}
+/* --- Title Flat ---- */
+.title-flat {
+  background-color: $lipsus_haji;
+}
+/* --- R-Side ---- */
+.r-side {
+  img {
+    width: 100%;
+  }
+}
+
+
+/*
+  Footer
+-------------------------------------*/
+/* --- Footer Top ---- */
+.footer-top {
+  padding: 25px 0;
+  border: none;
+  background-color: $lipsus_haji;
+}
+/* --- Logo Footer ---- */
+.logo-footer {
+  margin-top: 8px;
+}
+/* --- Social Media Footer ---- */
+.social.social-footer {
+  li {
+    margin: 0;
+    i {
+      width: 30px;
+      background-color: $lipsus_haji;
+      @include transition(.3s);
+      &:hover {
+        color: #DDC52B;
+        background-color: $lipsus_haji !important;
+      }
+    }
+  }
+}
+/* --- Copyright ---- */
+.copyright {
+  background: #000000;
+}
+/* --- Back To Top ---- */
+.backtop {
+  display: none;
+  svg {
+    background-color: #1382B8;
+    &:hover {
+      background-color: $lipsus_haji;
+    }
+    .Graphic-Style {
+        stroke: #fff;
+    }
+  }
+}
+
+
+/*
+  Media Query
+-------------------------------------*/
+@media screen and (min-width: 1083px) and (max-width: 1290px) {
+  /*
+    Content
+  -------------------------------------*/
+  .content {
+    width: 735px;
+    margin: 0 10px 120px 0;
+  }
+  /* --- List News ---- */
+  .list-news {
+    li {
+      .caption {
+        width: 520px;
+      }
+      .image {
+        img {
+          width: 180px;
+          height: 110px;
+        }
+      }
+    }
+  }
+  
+  /*
+    Rightbar
+  -------------------------------------*/
+  .rightbar {
+    width: 315px;
+  }
+}
+
+
+@media screen and (min-width: 993px) and (max-width: 1082px) {
+  /* --- Navigation ---- */
+  .nav-kanal {
+    li {
+      padding: 0;
+    }
+  }
+  /* --- Sosmed Header ---- */
+  .sosmed-header {
+    li {
+      padding: 0;
+    }
+  }
+
+  /*
+    Content
+  -------------------------------------*/
+  .content {
+    width: 565px;
+    margin: 0 20px 120px 0;
+  }
+  /* --- List News ---- */
+  .list-news {
+    li {
+      .caption {
+        width: 370px;
+      }
+      .image {
+        img {
+          width: 160px;
+          height: 100px;
+        }
+      }
+    }
+  }
+  
+  /*
+    Rightbar
+  -------------------------------------*/
+  .rightbar {
+    width: 255px;
+  }
+}

@@ -1,0 +1,38 @@
+@charset 'utf-8';
+/* ==========================================================================
+Author        :  Arif Lutfhansah
+Create        :  15 May 2017
+Last Update   :  22 May 2017
+
+Contents  :
+  1: Body Section
+  
+========================================================================== */
+
+/* --- Button Block ---- */
+.btn-block {
+  text-align: center;
+  background-color: #1A852C;
+  @include transition(.3s);
+  a {
+    font-family: $tahoma;
+    display: block;
+    padding: 15px;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+
+/* --- Cetegory ---- */
+.category {
+  font-family: $arial;
+  display: inline-block;
+  padding: 6px;
+  margin: 0 8px 0 0;
+  color: #FFF;
+  font-weight: 700;
+  line-height: 10px;
+  text-transform: uppercase;
+}

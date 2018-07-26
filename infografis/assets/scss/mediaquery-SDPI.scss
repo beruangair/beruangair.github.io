@@ -19,44 +19,53 @@ Contents  :
 /*
   Header
 -------------------------------------*/
-header {
-  height: 62px;
-}
 /* --- Logo --- */
 .logo {
-  position: relative;
-  left: 15px;
   img {
-    margin: 27.5px auto;
-    zoom: .6;
+    padding: 92px 0;
+    zoom: .4;
   }
 }
-/* --- Navigation ---- */
+/* --- Nav --- */
 nav {
-  top: 20px;
-  a {
-    font-size: 16px;
+  ul {
+    a {
+      padding: 0 3px;
+    }
   }
 }
 
 /*
-  Body
+  Main
 -------------------------------------*/
-/* --- Main Visual --- */
-.mainvisual {
-  margin-top: 62px;
+/* --- News --- */
+.news {
+  .title {
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
-/* --- Layout Image-Description --- */
-.picture {
-	float: none;
-	width: 100%;
-	margin: 0 0 30px 0;
-	img {
-		margin: 0 auto;
-	}
+.medium {
+  .news {
+    height: 335px;
+  }
 }
-.description {
-	float: none;
-	width: 100%;
-	text-align: center;
+.small {
+  .news {
+    img {
+      height: 100px;
+    }
+  }
+}
+/* --- Latest --- */
+.latest-list {
+  .col-md-4 {
+    height: 310px;
+  }
+}
+/* --- R Side --- */
+.r-side {
+  img {
+    width: 100%;
+  }
 }

@@ -1,0 +1,73 @@
+/*
+Error: Undefined mixin 'transition'.
+        on line 122 of /Applications/XAMPP/xamppfiles/htdocs/beruangair.github.io/lebaran_haji/assets/scss/footer.scss, in `transition'
+        from line 122 of /Applications/XAMPP/xamppfiles/htdocs/beruangair.github.io/lebaran_haji/assets/scss/footer.scss
+
+117: .backtop {
+118:   position: fixed;
+119:   bottom: 10px;
+120:   right: 15px;
+121:   cursor: pointer;
+122:   @include transition(.3s);
+123:   svg {
+124:     fill: #fff;
+125:     padding: 7px;
+126:     border-radius: 50%;
+127:     background-color: #fff;
+
+Backtrace:
+/Applications/XAMPP/xamppfiles/htdocs/beruangair.github.io/lebaran_haji/assets/scss/footer.scss:122:in `transition'
+/Applications/XAMPP/xamppfiles/htdocs/beruangair.github.io/lebaran_haji/assets/scss/footer.scss:122
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:98:in `block in with_mixin'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:98:in `with_mixin'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:444:in `map'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `map'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:161:in `visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/root_node.rb:20:in `render'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/engine.rb:290:in `render'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:464:in `update_stylesheet'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `each'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin.rb:82:in `update_stylesheets'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/exec/base.rb:52:in `parse'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/exec/base.rb:19:in `parse!'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/bin/sass:13:in `<top (required)>'
+/usr/local/bin/sass:22:in `load'
+/usr/local/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'transition'.\A         on line 122 of /Applications/XAMPP/xamppfiles/htdocs/beruangair.github.io/lebaran_haji/assets/scss/footer.scss, in `transition'\A         from line 122 of /Applications/XAMPP/xamppfiles/htdocs/beruangair.github.io/lebaran_haji/assets/scss/footer.scss\A \A 117: .backtop {\A 118:   position: fixed;\A 119:   bottom: 10px;\A 120:   right: 15px;\A 121:   cursor: pointer;\A 122:   @include transition(.3s);\A 123:   svg {\A 124:     fill: #fff;\A 125:     padding: 7px;\A 126:     border-radius: 50%;\A 127:     background-color: #fff;"; }

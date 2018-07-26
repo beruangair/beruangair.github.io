@@ -1,0 +1,445 @@
+@charset 'utf-8';
+/* ==========================================================================
+Author        :  Arif Lutfhansah
+Create        :  21 Agustus 2017
+Last Update   :  21 Agustus 2017
+
+Source  :
+  1: Arif Framework The MIT License (MIT) Copyright (c) Arif Lutfhansah
+  2: Bootstrap Framework The MIT License (MIT) Copyright (c) Bootstrap
+  3: Materialize Framework The MIT License (MIT) Copyright (c) 2014-2017 Materialize
+
+Contents  :
+  1: Header Section
+
+  Copyright (c) 2017 Arif Lutfhansah
+  
+========================================================================== */
+
+/*
+  Header Top
+-------------------------------------*/
+.header-top {
+	&.home {
+		background-color: #F5F5F5;
+	}
+	&.kanal {
+		background-color: #01579B;
+	}
+}
+
+/* --- Language ---- */
+.language {
+	padding: 11px 0 7px;
+	margin-right: 45px;
+	&.home {
+		padding: 8px 0 5px;
+	}
+	i {
+		display: inline-block;
+		width: 30px;
+		height: 20px;
+		margin: 0 8px 0 0;
+		@include transition(.3s);
+		&:hover {
+			opacity: .7;
+		}
+	}
+	.en {
+		background-position: -110px -24px;
+	}
+	.id {
+		background-position: -110px -3px;
+	}
+}
+
+/* --- MNC Group ---- */
+.mnc-group {
+	position: relative;
+	left: 370px;
+	li {
+		display: inline-block;
+		padding: 11px 8px 9px 3px;
+		a {
+			padding-right: 10px;
+			color: #01579B;
+			font: 13px $tahoma;
+			font-weight: 700;
+			border-right: 2px solid #01579B;
+			@include transition(.3s);
+			&:hover {
+				color: #D32F2F;
+			}
+		}
+		&:last-of-type {
+			a {
+				border-right: none;
+			}
+		}
+	}
+}
+
+/* --- Social Media ---- */
+.social {
+	li {
+	  display: inline-block;
+	  padding: 0 3px;
+	  margin: 20px 0 50px 0;
+	  color: #f3bb32;
+	  font-size: 16px;
+	  i {
+	  	width: 45px;
+		  padding: 12px 0;
+		  color: #fff;
+		  background: #282828;
+		  font-size: 20px;
+		  text-align: center;
+	  }
+	}
+	/* --- Social Media Header [Home] ---- */
+	&.social-header {
+		li {
+			height: 23px;
+			margin: 7px 0;
+			svg {
+				padding: 4px;
+				border-radius: 4px;
+				fill: #FFF;
+			}
+			& .facebook {
+				background: #01579B;
+			}
+			& .twitter {
+			  background: #40C4FF;
+			}
+			& .google-plus {
+			  background: #F44336;
+			}
+			& .rss {
+			  background: #FB8C00;
+			}
+		}
+	}
+}
+
+/* --- Sosial Media Header[Kanal] ---- */
+.sosmed-header {
+	li {
+		display: inline-block;
+		a {
+			display: block;
+			padding: 9px 8px 7px;
+			color: #51aafc;
+			font-size: 18px;
+			@include transition(.3s);
+			&:hover {
+				color: #C5E3FE;
+			}
+		}
+	}
+}
+
+/* --- Navigation Kanal ---- */
+.nav-kanal {
+	li {
+		display: inline-block;
+		a {
+			display: block;
+			padding: 12.5px 10px 13.5px;
+			color: #fff;
+			font: 14px $tahoma;
+			font-weight: 700;
+		}
+		.down-caret {
+			margin-left: 10px;
+			border-width: 4px 4px 0 4px;
+			border-color: #FFF transparent transparent transparent;
+		}
+		&:hover {
+			background: #C62828;
+		}
+		&:last-of-type {
+			a {
+				width: 96px;
+				padding: 12.5px 10px 13.5px;
+			}
+		}
+	}
+	&.secondary {
+		display: none;
+		position: absolute;
+		top: 43px;
+		right: 371px;
+		z-index: 99;
+		background-color: #01579B;
+		li {
+			display: block;
+			a {
+				padding: 12.5px 20px 13.5px;
+			}
+		}
+	}
+}
+
+/*
+  Header Bottom
+-------------------------------------*/
+.header-bottom {
+	.logo {
+		padding: 31px 0 27px;
+		@include transition(.3s);
+		&:hover {
+			opacity: .7;
+		}
+		.sindonews {
+			width: 400px;
+			height: 63px;
+			background-position: -5px -56px;
+		}
+	}
+	.r_header {
+		padding: 16px 0 10px;
+		@include transition(.3s);
+		&:hover {
+			opacity: .7;
+		}
+	}
+}
+
+
+
+/*
+  Header Mobile
+-------------------------------------*/
+.header-mobile {
+	display: none;
+	.inner {
+		padding: 0 15px;
+	}
+}
+
+/* --- Tribar --- */
+.navbar-toggle {
+	display: block;
+    margin: 18px 0;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+    .sr-only {
+	    position: absolute;
+	    width: 1px;
+	    height: 1px;
+	    margin: -1px;
+	    padding: 0;
+	    overflow: hidden;
+	    clip: rect(0, 0, 0, 0);
+	    border: 0;
+	}
+	.icon-bar {
+	    display: block;
+	    width: 22px;
+	    height: 2px;
+	    border-radius: 1px;
+	    background-color: #01579B;
+	    + .icon-bar {
+		    margin-top: 4px;
+		}
+	}
+}
+.down-caret {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 5px 0 5px;
+    border-color: #212121 transparent transparent transparent;
+    display: inline-block;
+    margin-left: 12px;
+    top: -2px;
+    position: relative;
+    transform: rotate(0deg);
+    transition: all 0.25s ease-in;
+}
+.right-caret {
+    width: 0;
+    height: 0;
+    margin: 4.5px 0 0 0;
+    border-style: solid;
+    border-width: 5px 5px 5px 8px;
+    border-color: transparent transparent transparent #212121;
+    display: inline-block;
+    transform: rotate(0deg);
+    transition: all 0.25s ease-in;
+}
+
+/* --- Navigation Mobile --- */
+.navigation-mobile {
+	ul {
+		li {
+			ul {
+				li {
+					.home {
+						padding: 0 16px;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* --- Search --- */
+.search {
+	svg {
+		display: block;
+    	margin: 15px 0;
+	}
+}
+
+
+/*
+  Media Query
+-------------------------------------*/
+@media screen and (max-width: 1290px) {
+  .header-bottom .r_header {
+    zoom: 0.8;
+  }
+}
+
+@media screen and (max-width: 1082px) {
+	/*
+	  Header Top
+	-------------------------------------*/
+	/* --- Language ---- */
+	.language {
+	    margin-right: 5px;
+	    padding: 10px 0 6px;
+	}
+  	.language i {
+    	zoom: 0.8;
+	}
+	/* --- Navigation Kanal ---- */
+	.nav-kanal {
+		width: 643px;
+		white-space: nowrap;
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+		-ms-overflow-style: -ms-autohiding-scrollbar;
+	}
+	.nav-kanal li {
+		padding: 8.5px 6px;
+	}
+	/* --- MNC Group ---- */
+	.mnc-group {
+		left: 15px;
+	}
+	/* --- Sosial Media Header ---- */
+	.social.social-header li {
+	    margin: 9px 0 7px;
+	}
+	.social.social-header i {
+	    width: 22px;
+	    padding: 3px 0;
+	}
+	/* --- Sosial Media Header[Kanal] ---- */
+	.sosmed-header li {
+	    padding: 8px 7px 6px;
+	}
+
+
+	/*
+	  Header Bottom
+	-------------------------------------*/
+	/* --- Logo ---- */
+	.logo {
+		padding: 23px 0 19px;
+	}
+	.logo .sindonews {
+	    zoom: 0.8;
+	}
+	/* --- R Header ---- */
+	.r_header {
+		padding: 17px 0 11px;
+	}
+	.r_header img {
+		width: 480px;
+	}
+	/*
+	  Navigation
+	-------------------------------------*/
+	/* --- Navbar ---- */
+	.navbar li {
+	    padding: 12px 17px 11px;
+	}
+	.navbar li a {
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.header-top, .header-bottom, .navigation {
+		display: none;
+	}
+
+	/*
+	  Slicknav
+	-------------------------------------*/
+	.slicknav {
+		border-bottom: 1px solid #eee;
+    	-webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,.6);
+    		-moz-box-shadow: 0 0 5px 0 rgba(0,0,0,.6);
+    			box-shadow: 0 0 5px 0 rgba(0,0,0,.6);
+	}
+	.navmobile {
+		position: absolute;
+		left: 25px;
+		color: #0D47A1;
+		font-size: 36px;
+	}
+	.logomobile {
+		width: 220px;
+		margin: 0 auto;
+		padding: 11px 0;
+	}
+	.logomobile span {
+		display: block;
+		line-height: 12px;
+		text-align: center;
+	}
+	.sindonewsmobile {
+		display: inline-block;
+		width: 220px;
+		height: 22px;
+		background-position: -6px -167px;
+	}
+	.searchmobile {
+		position: absolute;
+		top: 3px;
+		right: 25px;
+		color: #B71C1C;
+		font-size: 32px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+	/*
+	  Header Top
+	-------------------------------------*/
+	.header-top {
+		display: none;
+	}
+
+	/*
+	  Header Bottom
+	-------------------------------------*/
+	.header-bottom {
+		display: none;
+	}
+
+	/*
+	  Navigation Mobile
+	-------------------------------------*/
+	.header-mobile {
+		display: block;
+	}
+
+	/* --- Tribar --- */
+}

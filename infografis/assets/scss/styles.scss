@@ -23,11 +23,11 @@ Source  :
 // @import "components/badges";
 @import "components/navbar";
 // @import "components/transitions";
-// @import "components/cards";
+@import "components/cards";
 // @import "components/toast";
 // @import "components/tabs";
 // @import "components/tooltip";
-@import "components/dropdown";
+// @import "components/dropdown";
 // @import "components/modal";
 // @import "components/collapsible";
 // @import "components/chips";
@@ -43,8 +43,8 @@ Source  :
 // @import "components/datepicker";
 // @import "components/timepicker";
 
-@import 'splash';
 @import 'color';
+@import 'splash';
 @import 'header';
 @import 'body';
 @import 'footer';

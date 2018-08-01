@@ -1,0 +1,20 @@
+@charset 'utf-8';
+/* ==========================================================================
+Author        :  Arif Lutfhansah
+Create        :  15 May 2017
+Last Update   :  22 May 2017
+
+Contents  :
+  1: Body Section
+  
+========================================================================== */
+
+/*
+  Transition
+-------------------------------------*/
+.trs {
+  -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+      -o-transition: all .3s ease;
+        transition: all .3s ease;
+}

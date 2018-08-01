@@ -1,0 +1,147 @@
+@charset 'utf-8';
+/* ==========================================================================
+Author        :  Arif Lutfhansah
+Create        :  20 April 2018
+Last Update   :  20 April 2018
+
+Source  :
+  1: Arif Framework The MIT License (MIT) Copyright (c) Arif Lutfhansah
+  2: Bootstrap Framework The MIT License (MIT) Copyright (c) Bootstrap
+  3: Materialize Framework The MIT License (MIT) Copyright (c) 2014-2017 Materialize
+
+Contents  :
+  1: Media Query for Mobile (min width 769px) Section
+
+  Copyright (c) 2018 Arif Lutfhansah
+  
+========================================================================== */
+
+/*
+  Header
+-------------------------------------*/
+/* --- Header Top ---- */
+.header-top {
+  display: none;
+}
+/* --- Header Bottom ---- */
+.header-bottom {
+  display: none;
+}
+/* --- Header Mobile --- */
+.header-mobile {
+  display: block;
+  .inner {
+    padding: 0 15px;
+  }
+}
+/* --- Tribar --- */
+.navbar-toggle {
+  display: block;
+  margin: 18px 0;
+  .sr-only {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+  }
+  .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    margin-top: 4px;
+    background-color: #01579B;
+  }
+}
+/* --- Logo Mobile --- */
+.logo-mobile {
+  position: absolute;
+  i {
+    width: 220px;
+    height: 20px;
+    background-position: -6px -168px;
+  }
+}
+/* --- Search --- */
+.search {
+  svg {
+    display: block;
+    margin: 15px 0;
+  }
+}
+/* --- Navigation Mobile --- */
+.navigation-mobile {
+  display: none;
+  position: absolute;
+  color: #FFF;
+  background-color: #01579B;
+  z-index: 99;
+  li {
+
+  }
+}
+
+
+/*
+  Navigation
+-------------------------------------*/
+nav {
+  display: none;
+}
+
+/*
+  Footer
+-------------------------------------*/
+footer {
+  background: #001120;
+}
+.left-footer, .media, .management li, .sitemap .site-column span {
+  display: none;
+}
+/* --- Footer Top ---- */
+.footer-top {
+  padding: 30px 0 50px;
+  background-color: #001120;
+  background-image: url(../images/indonesia.png);
+  background-size: 100%;
+  background-position: 0px 50px;
+  background-repeat: no-repeat;
+}
+/* --- Sitemap ---- */
+.site-column, .right-footer {
+  float: none;
+}
+.site-column {
+  text-align: center;
+  li {
+    margin: 15px 0 0;
+    padding: 4px 0px;
+  }
+}
+/* --- Channel ---- */
+.channel {
+  margin: 0;
+  ul {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+  }
+  .hidden-sitemap {
+    margin: 0;
+  }
+}
+/* --- Management ---- */
+.management {
+  margin: 20px 0 0;
+  li {
+    &:last-of-type {
+      border-right: none;
+    }
+  }
+  .footer-unhide {
+    display: inline-block;
+    padding: 0 10px;
+    border-right: 1px solid #FFF;
+  }
+}
+/* --- Copyright ---- */
+.copyright {
+  background-color: #001120;
+}

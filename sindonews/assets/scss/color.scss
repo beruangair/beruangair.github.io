@@ -1,0 +1,27 @@
+@charset 'utf-8';
+/* ==========================================================================
+Author        :  Arif Lutfhansah
+Create        :  15 May 2017
+Last Update   :  22 May 2017
+
+Contents  :
+  1: Body Section
+  
+========================================================================== */
+
+
+/*
+  Kanal Nasional
+-------------------------------------*/
+$nasional : #D32F2F;
+
+/* --- Primary ---- */
+.nas {
+  background-color: $nasional !important;
+}
+.f-nas {
+  color: $nasional !important;
+}
+.b-nas {
+  border-color: $nasional !important;
+}

@@ -1,0 +1,194 @@
+@charset 'utf-8';
+/* ==========================================================================
+Author        :  Arif Lutfhansah
+Create        :  15 May 2017
+Last Update   :  22 May 2017
+
+Contents  :
+  1: Body Section
+  
+========================================================================== */
+
+main {
+  background-color: #ECEFF1;
+}
+
+/*
+  Leftbar
+-------------------------------------*/
+.leftbar {
+  width: 300px;
+  margin: 0 20px 0 0;
+  section {
+    margin-bottom: 20px;
+  }
+}
+
+/* --- Editor Choice ---- */
+.editor-choice {
+  li {
+    .caption {
+      height: 58px;
+      a {
+        &:hover {
+          color: #01579B;
+        }
+      }
+    }
+  }
+}
+
+/* --- Terpopuler ---- */
+.terpopuler {
+  li {
+    .caption {
+      width: 230px;
+    }
+  }
+}
+
+/* --- Media ---- */
+.media {
+  /*.image {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    .icon {
+      position: absolute;
+      border-radius: 3px;
+      svg {
+        fill: #D32F2F;
+        opacity: .6;
+      }
+    }
+  }*/
+  .picture {
+    object-fit: cover;
+    height: 200px;
+    .icon {
+      position: relative;
+      bottom: 0;
+      svg {
+        position: absolute;
+        bottom: 5px;
+        right: 0;
+        padding: 7px;
+        background-color: #D32F2F;
+        fill: #FFF;
+      }
+    }
+  }
+  .list-mini {
+    li {
+      .caption {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+/* --- R Side ---- */
+.l-side {
+  margin-bottom: 20px;
+  &.active {
+    display: block;
+  }
+}
+
+
+
+/*
+  Content
+-------------------------------------*/
+.content {
+  width: 620px;
+  margin: 0 20px 120px 0;
+}
+
+/* --- Breadcrumb ---- */
+.breadcrumb {
+  margin: 0 0 15px;
+  h1 {
+    display: inline-block;
+    padding: 0 15px 0 5px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 23px;
+    text-transform: uppercase;
+    border-left-width: 10px;
+    border-left-style: solid;
+  }
+  time {
+    position: relative;
+    bottom: 3px;
+    font-size: 18px;
+  }
+  ul {
+    padding: 0 0 10px 0;
+    border-bottom-width: 1px;
+    border-style: solid;
+    li {
+      display: inline-block;
+      font-weight: 700;
+      padding-right: 8px;
+      a {
+        color: #282828;
+        font: 14px $tahoma;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+
+
+/*
+  Rightbar
+-------------------------------------*/
+.rightbar {
+  width: 300px;
+  section, .r-side {
+    margin-bottom: 20px;
+  }
+}
+
+/* --- Live TV ---- */
+.live-tv {
+  .images {
+    height: 200px;
+  }
+  .list-mini {
+    li {
+      border-bottom: none;
+      &:first-of-type {
+        padding: 18px 12px 12px 12px;
+      }
+      &:last-of-type {
+        padding: 12px 12px 18px 12px;
+      }
+      img {
+        display: block;
+        width: 80px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+/* --- Hot Topic ---- */
+.hot-topic {
+  .list-mini {
+    li {
+      .caption {
+        width: 260px;
+        a {
+          font-family: $tahoma;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

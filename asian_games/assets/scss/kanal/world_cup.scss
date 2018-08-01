@@ -1,0 +1,1234 @@
+@charset 'utf-8';
+/* ==========================================================================
+Author        :  Arif Lutfhansah
+Create        :  29 March 2018
+Last Update   :  29 March 2018
+
+Contents  :
+  1: World Cup 2018 CSS
+  
+========================================================================== */
+
+body, main {
+  background-color: #F1ECE4;
+}
+
+/*
+  Color
+-------------------------------------*/
+$world_cup : #AC0C14;
+$world_cup_secondary : #1382B8;
+/* --- Primary ---- */
+.woc {
+  background-color: $world_cup !important;
+}
+.f-woc {
+  color: $world_cup !important;
+}
+.b-woc {
+  border-color: $world_cup !important;
+}
+.nav-woc {
+  background-color: $world_cup_secondary !important;
+  border: none !important;
+  li {
+    &:hover {
+      background-color: $world_cup;
+    }
+  }
+}
+
+/*
+  Title
+-------------------------------------*/
+.title-underline {
+  border-color: #E2C28B;
+  .caption {
+    padding: 0;
+    border-bottom: 5px solid #E2C28B;
+  }
+}
+
+/*
+  Header Top
+-------------------------------------*/
+.header-top {
+  border-bottom: 4px solid #E2C28B;
+}
+/* --- Navigation Kanal ---- */
+.nav-kanal {
+  li {
+    &:hover {
+      background: #AC0C14;
+      a {
+        color: #E2C28B;
+      }
+    }
+    &:last-of-type {
+      a {
+        width: auto;
+        padding: 12.5px 8px 13.5px;
+      }
+    }
+    a {
+      padding: 12.5px 8px 13.5px;
+      @include transition(.3s);
+    }
+  }
+}
+/* --- Navigation Fixed ---- */
+.navbar-fixed {
+  .kanal-extra {
+    top: 43px;
+    li {
+      background-color: #1382B8;
+    }
+  }
+}
+/* --- Sosial Media Header[Kanal] ---- */
+.sosmed-header {
+  li {
+    a {
+      color: #FFF;
+      &:hover {
+        color: #E2C28B;
+      }
+    }
+  }
+}
+
+/*
+  Header Bottom
+-------------------------------------*/
+/* --- Logo ---- */
+.logo {
+  padding: 26px 0 !important;
+  .world_cup {
+    width: 400px;
+    height: 68px;
+    background-position: -433px -4px;
+  }
+}
+
+/*
+  Widget Score
+-------------------------------------*/
+.score {
+  margin: 0 0 20px 0;
+  .title {
+    float: left;
+    width: 165px;
+    height: 115px;
+    padding: 25px 27px;
+    color: #E2C28B;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    line-height: 1.2;
+    background-image: url('../images/ornamen_01.png');
+    box-sizing: border-box;
+  }
+  .carousel {
+    float: left;
+    left: -0.5px !important;
+    width: 1011px !important;
+    margin: 0 2px;
+    li {
+      width: 200px;
+      height: 115px;
+      margin: 0 1.5px;
+      font-weight: 700;
+      background-color: #FFF;
+      .round {
+        padding: 2px 5px;
+        text-transform: uppercase;
+      }
+      .value {
+        height: 60px;
+        padding: 5px 0 0 0;
+        text-align: center;
+        .team {
+          float: left;
+          width: 50px;
+          .country {
+            font-size: 16px;
+          }
+        }
+        .skor {
+          float: left;
+          width: 100px;
+          span {
+            padding: 0 5px;
+            font-size: 22px;
+            &.versus {
+              position: relative;
+              top: -2px;
+              font-size: 16px;
+            }
+            &.win {
+              text-decoration: underline;
+              text-decoration-color: $world_cup;
+            }
+          }
+        }
+      }
+      .date {
+        color: #FFF;
+        padding: 5px 0px;
+        text-align: center;
+        background-color: $world_cup;
+      }
+    }
+  }
+  .prev, .next {
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 115px;
+    color: #E2C28B;
+    font-size: 45px;
+    text-align: center;
+    background-image: url('../images/ornamen_01.png');
+  }
+}
+
+/*
+  Leftbar
+-------------------------------------*/
+/* --- Terpopuler ---- */
+.terpopuler {
+  li {
+    height: 75px;
+    padding: 0;
+    &:last-of-type {
+      .rank {
+        padding: 19.6px 17px;
+      }
+    }
+    .rank {
+      padding: 19.6px 17px;
+      color: #FFF;
+      font-style: inherit;
+      text-shadow: none;
+      background-color: $world_cup;
+    }
+    .caption {
+      position: relative;
+      top: 7px;
+    }
+  }
+}
+
+/* --- Media ---- */
+.media {
+  .picture {
+    .icon {
+      svg {
+        background-color: $world_cup;
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+      }
+    }
+  }
+}
+
+/*
+  Content
+-------------------------------------*/
+/* --- Breadcrumb ---- */
+.breadcrumb {
+  margin-bottom: 10px;
+  ul {
+    padding: 0;
+    border: none;
+    li {
+      color: #1382B8;
+    }
+  }
+}
+/* --- Article ---- */
+.article {
+  background-color: #FFF;
+  .inner {
+    padding: 10px 20px;
+  }
+  h1 {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 26px;
+    line-height: 37px;
+  }
+  .author {
+    display: block;
+    padding-top: 10px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  time {
+    display: block;
+    padding-bottom: 10px;
+    color: #757575;
+  }
+  .sponsored {
+    position: relative;
+    top: 20px;
+    img {
+      width: 150px;
+    }
+  }
+  figcaption {
+    margin-bottom: 15px;
+    color: #757575;
+    font-size: 11px;
+    text-align: center;
+  }
+  .meta-profile {
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #EEEEEE;
+    .flag {
+      width: 160px;
+      padding: 6px 0;
+    }
+    .history {
+      width: 370px;
+      li {
+        padding: 1px 0;
+        color: #212121;
+        font-size: 14px;
+        border-bottom: 1px solid #E0E0E0;
+      }
+      span {
+        float: left;
+        min-width: 120px;
+        max-width: 200px;
+        color: $world_cup;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: -1px;
+        text-transform: uppercase;
+        clear: both;
+      }
+    }
+  }
+  p, b {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    line-height: 25px;
+  }
+  .r_center {
+    margin-top: 40px;
+  }
+  .list-more {
+    li {
+      padding: 10px 12px;
+      border-bottom: 1px solid #EEE;
+      a {
+        font-size: 16px;
+        font-weight: 700;
+      }
+    }
+  }
+}
+/* --- Follow Us ---- */
+.follow-us {
+  margin: 30px 0 50px;
+  li {
+    display: inline-block;
+    margin-right: 7px;
+    &:last-of-type {
+      margin: 0;
+    }
+    a {
+      display: block;
+      width: 108px;
+      padding: 5px 0;
+      color: #FFF;
+      font-size: 12px;
+      font-weight: 700;
+      text-align: center;
+      border-width: 1px;
+      border-style: solid;
+      border-radius: 3px;
+      @include transition(.3s);
+      &:hover {
+        background-color: #FFF;
+      }
+      i {
+        padding-right: 8px;
+        font-size: 16px;
+      }
+    }
+  }
+  .facebook {
+    background-color: #4968A8;
+    border-color: #4968A8;
+    &:hover {
+      color: #4968A8;
+    }
+  }
+  .twitter {
+    background-color: #2AA3EF;
+    border-color: #2AA3EF;
+    &:hover {
+      color: #2AA3EF;
+    }
+  }
+  .googleplus {
+    background-color: #DB4C3F;
+    border-color: #DB4C3F;
+    &:hover {
+      color: #DB4C3F;
+    }
+  }
+  .linkedin {
+    background-color: #1178B3;
+    border-color: #1178B3;
+    &:hover {
+      color: #1178B3;
+    }
+  }
+  .email {
+    background-color: #2B6DFB;
+    border-color: #2B6DFB;
+    &:hover {
+      color: #2B6DFB;
+    }
+  }
+}
+/* --- Berita Terkait ---- */
+.berita-terkait {
+  .title {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .tag {
+    margin: 10px 0px 30px;
+    li {
+      display: inline-block;
+      margin-right: 10px;
+      a {
+        padding: 5px 10px;
+        color: #FFF;
+        font-size: 14px;
+        font-weight: 700;
+        background-color: #9E9E9E;
+        &:hover {
+          opacity: .7;
+        }
+      }
+    }
+  }
+}
+/* --- List News ---- */
+.list-news {
+  li {
+    &:hover {
+      background-color: #FFF;
+    }
+    &.breadcrumb {
+      padding: 7px 12px;
+      margin: 0;
+      .separator {
+        padding-right: 5px;
+        color: #1382B8;
+        font-size: 16px;
+        font-weight: 700;
+      }
+      a {
+        padding-right: 5px;
+        font-size: 16px;
+        font-weight: 700;
+        @include transition(.3s);
+        &:hover {
+          color: #1382B8;
+        }
+      }
+    }
+    .caption {
+      a {
+        &:hover {
+          color: #E2C28B;
+        }
+      }
+    }
+    .image {
+      cursor: pointer;
+      @include transition(.3s);
+      &:hover {
+        opacity: .7;
+      }
+    }
+  }
+  .mainvisual {
+    text-align: center;
+    &.big {
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+    &.small {
+      width: 292px;
+      .title {
+        a {
+          font-size: 16px;
+          line-height: 21px;
+        }
+      }
+    }
+    .images {
+      position: relative;
+      overflow: hidden;
+      &:hover {
+        .caption {
+          .title {
+            a {
+              color: #E2C28B;
+            }
+          }
+        }
+      }
+      .caption {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background: #000;
+        background: -webkit-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));
+        background: -o-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));
+        background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));
+        .category {
+          position: relative;
+          top: -5px;
+          width:100%;
+          border-bottom: 1px solid #E2C28B; 
+          line-height: 0.1em;
+          span {
+            position: relative;
+            top: 7px;
+            padding: 1px 10px;
+            font-size: 14px;
+            background-color: #AC0C14;
+            text-transform: none;
+          }
+        }
+        .title {
+          a {
+            padding: 10px 10px 20px;
+            color: #FFF;
+          }
+        }
+      }
+    }
+    .image {
+      width: 130px;
+      height: 90px;
+      img {
+        width: 130px;
+        height: 90px;
+      }
+    }
+  }
+}
+/* --- Button ---- */
+.btn-block {
+  background-color: #E2C28B;
+  &:hover {
+    background-color: $world_cup;
+  }
+}
+/* --- Klasemen ---- */
+.content {
+  &.klasemen-grup {
+    width: 920px;
+    table {
+      margin-bottom: 20px;
+      th {
+        &:first-child {
+          width: 80px;
+          padding: 0;
+          text-align: center;
+        }
+        &:nth-child(2) {
+          padding: 8px 5px 8px 0;
+          text-align: left;
+        }
+      }
+      td {
+        &:first-child {
+          width: 80px;
+          padding: 0;
+          text-align: center;
+        }
+        &:nth-child(2) {
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+table {
+  width: 100%;
+  text-align: center;
+  th {
+    padding: 8px 5px;
+    vertical-align: middle;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #FFF;
+    border-bottom: 2px solid #EEE;
+    &:first-child {
+      width: 130px;
+      padding: 0 0 0 15px;
+      font-weight: 700;
+      text-align: left;
+    }
+  }
+  tr {
+    &:hover {
+      td {
+        background-color: #eddab9;
+      }
+    }
+    td {
+      vertical-align: middle;
+      height: 50px;
+      background-color: #FFF;
+      border-bottom: 2px solid #ffffff;
+      font-size: 16px;
+      font-weight: 700;
+      @include transition(.3s);
+      &:first-child {
+        width: 130px;
+        padding: 0 0 0 15px;
+        font-weight: 700;
+        text-align: left;
+      }
+      img {
+        padding: 0 5px 0 0;
+        vertical-align: middle;
+      }
+      span {
+        font-size: 16px;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+/* --- Tab ---- */
+.tabpanel {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  .tabbing {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+  .tabbing:checked + .label {
+    background: #AC0C14;
+    color: #FFF;
+  }
+  .label {
+    flex: 0 1 auto;
+    padding: 12px;
+    background: #1382B8;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .panel {
+    display: none;
+    background: #FFF;
+  }
+  .panel > *:first-child {
+    margin-top: 0;
+  }
+  .panel > *:last-child {
+    margin-bottom: 0;
+  }
+  .panel > * + * {
+    margin-top: 24px;
+  }
+  #tab-1:checked ~ .tabpanel-panel #panel-1,
+  #tab-2:checked ~ .tabpanel-panel #panel-2,
+  #tab-3:checked ~ .tabpanel-panel #panel-3,
+  #tab-4:checked ~ .tabpanel-panel #panel-4,
+  #tab-5:checked ~ .tabpanel-panel #panel-5 {
+    display: block;
+    position: relative;
+    top: 0px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .tabpanel {
+    flex-direction: column;
+  }
+  .tabpanel .label {
+    padding: 24px 36px;
+  }
+  .tabpanel .label + .tabpanel__tab + .label {
+    margin-top: 6px;
+  }
+  .tabpanel .tabpanel__tab:checked ~ .tabpanel-panel {
+    order: 1;
+  }
+  .tabpanel .tabpanel__tab:not(:checked) + .label {
+    order: initial;
+  }
+  .tabpanel #tabpanel__tab-1 + .label {
+    order: 1;
+  }
+  .tabpanel #tabpanel__tab-1:checked ~ .tabpanel-panel {
+    order: 1;
+  }
+  .tabpanel #tabpanel__tab-2 + .label {
+    order: 2;
+  }
+  .tabpanel #tabpanel__tab-2:checked ~ .tabpanel-panel {
+    order: 2;
+  }
+  .tabpanel #tabpanel__tab-3 + .label {
+    order: 3;
+  }
+  .tabpanel #tabpanel__tab-3:checked ~ .tabpanel-panel {
+    order: 3;
+  }
+  .tabpanel #tabpanel__tab-4 + .label {
+    order: 4;
+  }
+  .tabpanel #tabpanel__tab-4:checked ~ .tabpanel-panel {
+    order: 4;
+  }
+  .tabpanel #tabpanel__tab-5 + .label {
+    order: 5;
+  }
+  .tabpanel #tabpanel__tab-5:checked ~ .tabpanel-panel {
+    order: 5;
+  }
+  .tabpanel .panel {
+    padding: 0 12px 12px 12px;
+  }
+}
+@media screen and (min-width: 601px) {
+  .tabpanel {
+    flex-direction: row;
+  }
+  .tabpanel .label {
+    flex: 0 1 auto;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .tabpanel .label + .tabbing+ .label {
+    margin-left: 6px;
+  }
+  .tabpanel .panel {
+    padding: 12px;
+  }
+  .tabpanel .tabpanel-panel {
+    flex: 1 1 100%;
+  }
+}
+
+
+/*
+  Rightbar
+-------------------------------------*/
+/* --- Tab Klasemen/Tim ---- */
+.group-a:checked~.group-a,
+.group-b:checked~.group-b,
+.group-c:checked~.group-c,
+.group-d:checked~.group-d,
+.group-e:checked~.group-e,
+.group-f:checked~.group-f,
+.tab1:checked~.tab1,
+.tab2:checked~.tab2,
+.tab3:checked~.tab3,
+.tab4:checked~.tab4,
+.tab5:checked~.tab5,
+.tab6:checked~.tab6 {
+  display: block;
+}
+
+.tab {
+  background-color: $world_cup;
+  .title-tab {
+    position: relative;
+    padding: 0px 10px;
+    top: 4px;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  input[type="radio"] {
+    display: none;
+  }
+  input[type="radio"]+label {
+    display: inline-block;
+    padding: 5px 3px;
+    color: #ffffff
+  }
+  input[type="radio"]:checked+label span {
+    background-color: #ffffff;
+    color: #404040;
+    outline: none;
+  }
+  label {
+    float: right;
+    cursor: pointer;
+    span {
+      font-size: 16px;
+      font-weight: 700;
+      padding: 0px 6px;
+      border-radius: 20px;
+    }
+  }
+  .group {
+    display: none;
+    width: 300px;
+    background-color: #F1ECE4;
+    height: 100%;
+    overflow: hidden;
+    .country {
+      position: relative;
+      width: 300px;
+      height: 200px;
+      margin-bottom: 2px;
+      overflow: hidden;
+      &:hover {
+        .name {
+          a {
+            color: #ECEA06;
+            padding: 5px 25px;
+          }
+        }
+      }
+      .name {
+        position: absolute;
+        bottom: 0;
+        z-index: 99;
+        width: 100%;
+        background-color: rgba(0, 0, 0, .7);
+        a {
+          display: block;
+          padding: 5px 15px;
+          color: #E2C28B;
+          font-size: 18px;
+          font-weight: 700;
+          @include transition(.3s);
+        }
+      }
+      img {
+        height: 200px;
+        object-fit: cover;
+        @include transition(.3s);
+      }
+    }
+  }
+}
+
+
+/*
+  Footer
+-------------------------------------*/
+/* --- Footer Top ---- */
+.footer-top {
+  border-top-color: #E2C28B;
+  border-bottom: 5px solid #E2C28B;
+  background-image: url('../images/ornamen_worldcup_02.jpg');
+  background-size: cover;
+}
+/* --- Social Media Footer ---- */
+.social.social-footer {
+  li {
+    i {
+      background-color: $world_cup;
+      &:hover {
+        background-color: $world_cup_secondary !important;
+      }
+    }
+  }
+}
+/* --- Copyright ---- */
+.copyright {
+  background: #780307;
+}
+/* --- Back To Top ---- */
+.backtop {
+  display: none;
+  svg {
+    background-color: #1382B8;
+    &:hover {
+      background-color: $world_cup;
+    }
+    .Graphic-Style {
+        stroke: #fff;
+    }
+  }
+}
+
+
+/*
+  Media Query
+-------------------------------------*/
+@media screen and (min-width: 1083px) and (max-width: 1290px) {
+  /*
+    Header Bottom
+  -------------------------------------*/
+  /* --- Logo ---- */
+  .logo {
+    padding: 17px 0 !important;
+  }
+
+  /* --- Navigation Kanal ---- */
+  .nav-kanal {
+    li {
+      a {
+        font-size: 12px;
+      }
+    }
+  }
+  /* --- Sosmed Header ---- */
+  .sosmed-header {
+    li {
+      a {
+        font-size: 16px;
+      }
+    }
+  }
+  /* --- Meta Profile ---- */
+  .article {
+    .meta-profile {
+      .flag {
+        width: 110px;
+      }
+      .history {
+        width: 340px;
+        li {
+          font-size: 12px;
+        }
+        span {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  /*
+    Widget Score
+  -------------------------------------*/
+  .score {
+    .title {
+        width: 150px;
+        padding: 30px 25px;
+        font-size: 24px;
+      }
+      .widget-score {
+        .carousel {
+            width: 826px !important;
+            li {
+              width: 204px;
+            }
+      }
+    }
+  }
+
+  /*
+    Leftbar
+  -------------------------------------*/
+  .leftbar {
+    width: 250px;
+    margin: 0 10px 0 0;
+  }
+  /* --- Terpopuler ---- */
+  .terpopuler {
+    li {
+      .caption {
+          width: 180px;
+          height: 60px;
+        overflow: hidden;
+      }
+    }
+  }
+  /* --- Media ---- */
+  .media {
+    .picture {
+      height: 165px;
+      img {
+        width: 250px;
+      }
+    }
+  }
+
+  /*
+    Content
+  -------------------------------------*/
+  .content {
+    width: 540px;
+    margin: 0 10px 120px 0;
+  }
+  /* --- List News ---- */
+  .list-news {
+    li {
+      .caption {
+        width: 390px;
+      }
+    }
+    .mainvisual {
+      &.small {
+        width: 252px;
+      }
+    }
+  }
+  /* --- Klasemen ---- */
+  .content {
+    &.klasemen-grup {
+      width: 800px;
+    }
+  }
+  
+  /*
+    Rightbar
+  -------------------------------------*/
+  .rightbar {
+    width: 250px;
+  }
+  /* --- Tab Klasemen/Tim ---- */
+  .tab {
+    .group {
+      width: 250px;
+    }
+  }
+  /* --- R Side ---- */
+  .r-side {
+    width: 250px;
+    img {
+      object-fit: cover;
+      width: 250px;
+    }
+  }
+  /* --- Hot Topic ---- */
+  .hot-topic {
+    .list-mini {
+      li {
+        .caption {
+          width: 200px;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 993px) and (max-width: 1082px) {
+  /*
+    Header Bottom
+  -------------------------------------*/
+  /* --- Logo ---- */
+  .logo {
+    padding: 17px 0 !important;
+    zoom: .9;
+  }
+
+  /*
+    Title
+  -------------------------------------*/
+  .title-underline {
+    .caption {
+      font-size: 18px;
+    }
+  }
+
+  /*
+    Widget Score
+  -------------------------------------*/
+  .score {
+    .title {
+        width: 150px;
+        padding: 30px 25px;
+        font-size: 24px;
+      }
+      .widget-score {
+        .carousel {
+            width: 606px !important;
+            li {
+              width: 200px;
+            }
+      }
+    }
+  }
+
+  /* --- Navigation ---- */
+  .navigation {
+    li {
+      a {
+        padding: 10px 14px;
+      }
+    }
+  }
+
+  /*
+    Leftbar
+  -------------------------------------*/
+  .leftbar {
+    width: 210px;
+    margin: 0 10px 0 0;
+  }
+  /* --- Terpopuler ---- */
+  .terpopuler {
+    li {
+      .caption {
+        width: 150px;
+      }
+    }
+  }
+  /* --- Media ---- */
+  .media {
+    .picture {
+      height: 140px;
+      img {
+        width: 210px;
+      }
+    }
+  }
+
+  /*
+    Content
+  -------------------------------------*/
+  .content {
+    width: 400px;
+    margin: 0 10px 120px 0;
+  }
+  /* --- Meta Profile ---- */
+  .article {
+    .meta-profile {
+      .flag {
+        display: block;
+        width: 100%;
+        img {
+          width: 160px;
+          margin: 0 auto;
+        }
+      }
+      .history {
+        display: block;
+        width: 100%;
+        margin-top: 12px;
+        li {
+          font-size: 12px;
+        }
+        span {
+          min-width: 110px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  /* --- Follow Us ---- */
+  .follow-us {
+    li {
+      margin-bottom: 5px;
+    }
+  }
+  /* --- Berita Terkait ---- */
+  .berita-terkait {
+    .tag {
+      li {
+        margin-bottom: 15px;
+      }
+    }
+  }
+  /* --- List News ---- */
+  .list-news {
+    li {
+      .caption {
+        width: 240px;
+        .title {
+          a {
+            font-size: 18px;
+            line-height: 27px;
+          }
+        }
+        time {
+          display: block;
+          padding-top: 8px;
+        }
+        .text {
+          height: 70px;
+        }
+      }
+    }
+    .mainvisual {
+      &.small {
+        width: 184px;
+        .title {
+          a {
+            font-size: 14px;
+            line-height: 19px;
+          }
+        }
+      }
+    }
+  }
+  /* --- Klasemen ---- */
+  .content {
+    &.klasemen-grup {
+      width: 620px;
+    }
+  }
+  
+  /*
+    Rightbar
+  -------------------------------------*/
+  .rightbar {
+    width: 210px;
+  }
+  /* --- Tab Klasemen/Tim ---- */
+  .tab {
+    .title-tab {
+      top: 3px;
+      font-size: 16px;
+    }
+    label {
+      span {
+        font-size: 14px;
+        padding: 0px 4px;
+      }
+    }
+    .group {
+      width: 210px;
+      .country {
+        height: 150px;
+        img {
+          width: 210px;
+        }
+      }
+    }
+  }
+  /* --- R Side ---- */
+  .r-side {
+    width: 210px;
+    img {
+      object-fit: cover;
+      width: 210px;
+    }
+  }
+  /* --- Hot Topic ---- */
+  .hot-topic {
+    .list-mini {
+      li {
+        .caption {
+          width: 160px;
+        }
+      }
+    }
+  }
+}

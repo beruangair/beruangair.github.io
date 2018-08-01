@@ -1,0 +1,195 @@
+@charset 'utf-8';
+/* ==========================================================================
+Author        :  Arif Lutfhansah
+Create        :  20 April 2018
+Last Update   :  20 April 2018
+
+Source  :
+  1: Arif Framework The MIT License (MIT) Copyright (c) Arif Lutfhansah
+  2: Bootstrap Framework The MIT License (MIT) Copyright (c) Bootstrap
+  3: Materialize Framework The MIT License (MIT) Copyright (c) 2014-2017 Materialize
+
+Contents  :
+  1: Media Query for HDPI (width 1083px-1290px) Section
+
+  Copyright (c) 2018 Arif Lutfhansah
+  
+========================================================================== */
+
+/*
+  Header
+-------------------------------------*/
+.header-bottom {
+  height: 234px;
+}
+/* --- Language ---- */
+.language {
+  margin-right: 25px;
+}
+/* --- MNC Group ---- */
+.mnc-group {
+  left: 180px;
+}
+/* --- Navigation Kanal ---- */
+.nav-kanal {
+  li {
+    &:nth-child(10), &:nth-child(11), &:nth-child(12) {
+      display: none;
+    }
+  }
+}
+#dropdown-kanal {
+  .xhdpi,.hdpi {
+    display: block;
+  }
+}
+/* --- Logo --- */
+.logo {
+  .sindonews {
+    zoom: .9;
+  }
+}
+/* --- R Header --- */
+.r_header {
+  padding: 19px 0 14px;
+  zoom: .9;
+}
+/* --- Ornamen Header ---- */
+.ornamen-header {
+  width: 1130px;
+}
+/* --- Subkanal Navigation ---- */
+.nav-subkanal {
+  top: -48px;
+  a {
+    padding: 13px 10px 14px;
+  }
+}
+/* --- Background Navigation ---- */
+.backgound-nav {
+  top: -44px;
+  margin-bottom: -44px;
+  height: 44px;
+}
+
+/*
+  Navigation
+-------------------------------------*/
+/* --- Navigation ---- */
+.navigation {
+  a {
+    padding: 11px 14px;
+    font-size: 15px;
+  }
+}
+
+/*
+  Main Visual
+-------------------------------------*/
+/* --- Headline ---- */
+.headline {
+  .big {
+    width: 555px;
+    height: 365px;
+    a {
+      width: 515px;
+      height: 365px;
+      img {
+        width: 555px;
+        height: 365px;
+      }
+    }
+  }
+  .small {
+    width: 237px;
+    height: 175px;
+    margin-left: 15px;
+    .box {
+      width: 237px;
+      height: 175px;
+    }
+    .images {
+      width: 237px;
+      height: 175px;
+      img {
+        width: 237px;
+        height: 175px;
+      }
+    }
+    .caption {
+      top: -126px;
+    }
+  }
+}
+
+/*
+  Body
+-------------------------------------*/
+.leftbar {
+  width: 240px;
+  margin: 0 15px 0 0;
+}
+.content {
+  width: 550px;
+  margin: 0 15px 120px 0;
+}
+.rightbar {
+  width: 240px;
+}
+/* --- Editor Choice ---- */
+.editor-choice {
+  .caption {
+    width: 145px;
+  }
+}
+/* --- Terpopuler ---- */
+.terpopuler {
+  .caption {
+    width: 170px;
+  }
+}
+/* --- List News ---- */
+.list-news {
+  .reverse {
+    .caption {
+      width: 310px;
+    }
+    .image {
+      width: 205px;
+      height: 135px;
+        img {
+          width: 205px;
+          height: 135px;
+        }
+    }
+  }
+  .caption {
+    width: 390px;
+  }
+}
+/* --- Opini ---- */
+.opini {
+  .caption {
+    width: 145px;
+  }
+}
+/* --- Tajuk Sindo ---- */
+.tajuk-sindo {
+  .caption {
+    width: 145px;
+  }
+}
+/* --- Hot Topic ---- */
+.hot-topic {
+  .caption {
+    width: 200px;
+  }
+}
+
+/*
+  Footer
+-------------------------------------*/
+.footer-top {
+  background-size: 710px;
+  background-position: 0px 242px;
+}

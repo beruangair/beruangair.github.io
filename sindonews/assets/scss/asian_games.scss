@@ -1,0 +1,87 @@
+@charset 'utf-8';
+/* ==========================================================================
+Author        :  Arif Lutfhansah
+Create        :  30 July 2018
+Last Update   :  30 July 2018
+
+Contents  :
+  1: Asian Games
+  
+========================================================================== */
+
+/*
+  Header
+-------------------------------------*/
+.header-bottom {
+  position: relative;
+  z-index: 99;
+  height: 283px;
+  background-repeat: no-repeat;
+}
+/* --- Subkanal Navigation ---- */
+.nav-subkanal {
+  position: relative;
+  top: -57px;
+  margin-bottom: -57px;
+  li {
+    display: inline-block;
+  }
+  a {
+    display: block;
+    padding: 17px 10px 18px;
+    color: #fff;
+    font: 14px Tahoma,Geneva,sans-serif;
+    font-weight: 700;
+  }
+}
+/* --- Background Navigation ---- */
+.backgound-nav {
+  position: relative;
+  top: -52px;
+  margin-bottom: -52px;
+  height: 52px;
+  background-color: #EB323C;
+}
+
+/*
+  Main
+-------------------------------------*/
+main {
+  background-color: #FFF;
+}
+/* --- List News ---- */
+.list-news {
+  li {
+    background-color:#ECEFF1;
+  }
+}
+
+/*
+  Footer
+-------------------------------------*/
+.footer-top {
+  background-color: #FFF;
+  background-image: url('../images/ornamen_asian_games_02.png');
+  background-repeat: no-repeat;
+  background-position: 0px 196px;
+  border: none;
+}
+/* --- Logo Footer ---- */
+.logo-footer {
+  position: relative;
+  left: 80px;
+  width: 399px;
+  height: 40px;
+  margin-bottom: 35px;
+  background-position: -6px -55px;
+}
+/* --- Sitemap ---- */
+.site-column {
+  a {
+    color: #084C8D;
+  }
+}
+/* --- Copyright ---- */
+.copyright {
+  background-color: #8FAC34;
+}

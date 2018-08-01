@@ -1,0 +1,160 @@
+@charset 'utf-8';
+/* ==========================================================================
+Author        :  Arif Lutfhansah
+Create        :  20 April 2018
+Last Update   :  20 April 2018
+
+Source  :
+  1: Arif Framework The MIT License (MIT) Copyright (c) Arif Lutfhansah
+  2: Bootstrap Framework The MIT License (MIT) Copyright (c) Bootstrap
+  3: Materialize Framework The MIT License (MIT) Copyright (c) 2014-2017 Materialize
+
+Contents  :
+  1: Media Query for MDPI (width 993px-1082px) Section
+
+  Copyright (c) 2018 Arif Lutfhansah
+  
+========================================================================== */
+
+/*
+  Header
+-------------------------------------*/
+/* --- Language ---- */
+.language {
+  margin-right: 5px;
+  padding: 13px 0 7px;
+  &.home {
+    padding: 8px 0 4px;
+  }
+  i {
+    zoom: 0.86;
+  }
+}
+/* --- MNC Group ---- */
+.mnc-group {
+  left: 15px;
+}
+/* --- Navigation Kanal ---- */
+.nav-kanal {
+  li {
+    &:nth-child(7), &:nth-child(8), &:nth-child(9), &:nth-child(10), &:nth-child(11) {
+      display: none;
+    }
+  }
+  &.secondary {
+    position: relative;
+    left: 67px;
+    li {
+      &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5) {
+        display: none;
+      }
+      &:nth-child(7) {
+        display: inline-block;
+      }
+    }
+  }
+}
+/* --- Social Media ---- */
+.social {
+  /* --- Social Media Header [Home] ---- */
+  &.social-header {
+    li {
+      margin: 9px 0 7px;
+    }
+    i {
+      width: 22px;
+      padding: 3px 0;
+    }
+  }
+}
+/* --- Logo ---- */
+.logo {
+  padding: 23px 0 19px;
+  .sindonews {
+    zoom: 0.8;
+  }
+}
+/* --- R Header ---- */
+.r_header {
+  padding: 24px 0 23px;
+  zoom: .65;
+}
+
+/*
+  Navigation
+-------------------------------------*/
+/* --- Navigation ---- */
+.navigation {
+  a {
+    padding: 11px 7px;
+    font-size: 14px;
+  }
+}
+
+/*
+  Main Visual
+-------------------------------------*/
+/* --- Headline ---- */
+.headline {
+  .big {
+    width: 450px;
+    height: 325px;
+    a {
+      width: 450px;
+      height: 355px;
+      img {
+        width: 450px;
+        height: 355px;
+      }
+    }
+  }
+  .small {
+    width: 180px;
+    height: 150.5px;
+    margin-left: 15px;
+    .box {
+      width: 180px;
+      height: 150.5px;
+    }
+    .images {
+      width: 180px;
+      height: 150.5px;
+      img {
+        width: 180px;
+        height: 150.5px;
+      }
+    }
+    .caption {
+      top: -126px;
+    }
+  }
+}
+
+/*
+  Body
+-------------------------------------*/
+.leftbar {
+  width: 170px;
+  margin: 0 15px 0 0;
+}
+.content {
+  width: 470px;
+  margin: 0 15px 120px 0;
+}
+.rightbar {
+  width: 170px;
+}
+/* --- List Mini ---- */
+.list-mini {
+  .caption {
+    width: 145px;
+  }
+}
+
+/*
+  Footer
+-------------------------------------*/
+/* --- Sitemap ---- */
+.site-column {
+  margin-left: 50px;
+}

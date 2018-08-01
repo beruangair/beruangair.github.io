@@ -1,0 +1,213 @@
+@charset 'utf-8';
+/* ==========================================================================
+Author        :  Arif Lutfhansah
+Create        :  20 April 2018
+Last Update   :  20 April 2018
+
+Source  :
+  1: Arif Framework The MIT License (MIT) Copyright (c) Arif Lutfhansah
+  2: Bootstrap Framework The MIT License (MIT) Copyright (c) Bootstrap
+  3: Materialize Framework The MIT License (MIT) Copyright (c) 2014-2017 Materialize
+
+Contents  :
+  1: Media Query for SDPI (width 769px-992px) Section
+
+  Copyright (c) 2018 Arif Lutfhansah
+  
+========================================================================== */
+
+/*
+  Header
+-------------------------------------*/
+/* --- Language ---- */
+.language {
+  margin-right: 5px;
+  padding: 13px 0 9px 8px;
+  &.home {
+    padding: 10px 0 6px 8px;
+  }
+  i {
+    zoom: 0.8;
+  }
+}
+/* --- MNC Group ---- */
+.mnc-group {
+  left: 20px;
+  li {
+    padding: 10px 5px 9px 1px;
+  }
+  a {
+    font-size: 12px;
+  }
+}
+/* --- Navigation Kanal ---- */
+.nav-kanal {
+  position: relative;
+  left: 30px;
+  li {
+    &:nth-child(6), &:nth-child(7), &:nth-child(8), &:nth-child(9), &:nth-child(10), &:nth-child(11) {
+      display: none;
+    }
+  }
+  &.secondary {
+    position: relative;
+    left: 107px;
+    li {
+      &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5) {
+        display: none;
+      }
+      &:nth-child(6), &:nth-child(7) {
+        display: inline-block;
+      }
+    }
+  }
+}
+/* --- Social Media ---- */
+.social {
+  /* --- Social Media Header [Home] ---- */
+  &.social-header {
+    li {
+      margin: 7px 0;
+    }
+    i {
+      width: 22px;
+      padding: 3px 0;
+    }
+  }
+}
+/* --- Logo ---- */
+.logo {
+  padding: 23px 0 19px;
+  .sindonews {
+    zoom: 0.7;
+  }
+}
+/* --- R Header ---- */
+.r_header {
+  padding: 24px 0 23px;
+  zoom: .65;
+}
+
+/*
+  Navigation
+-------------------------------------*/
+/* --- Navigation ---- */
+.navigation {
+  a {
+    padding: 13px 6px;
+    font-size: 13px;
+  }
+}
+/* --- Navbar ---- */
+.navbar {
+  li {
+    padding: 12px 17px 11px;
+  }
+  a {
+    font-size: 14px;
+  }
+}
+
+/*
+  Main Visual
+-------------------------------------*/
+/* --- Headline ---- */
+.headline {
+  .big {
+    float: left;
+    width: 450px;
+    height: 325px;
+    a {
+      width: 450px;
+      height: 355px;
+      img {
+        width: 450px;
+        height: 355px;
+      }
+    }
+  }
+  .small {
+    float: left;
+    width: 180px;
+    height: 150.5px;
+    margin-left: 15px;
+    .box {
+      width: 180px;
+      height: 150.5px;
+    }
+    .images {
+      width: 180px;
+      height: 150.5px;
+      img {
+        width: 180px;
+        height: 150.5px;
+      }
+    }
+    .caption {
+      top: -126px;
+    }
+  }
+}
+
+/*
+  Footer
+-------------------------------------*/
+footer {
+  background: #001120;
+}
+.left-footer, .media, .management li, .sitemap .site-column span {
+  display: none;
+}
+
+/* --- Footer Top ---- */
+.footer-top {
+  padding: 30px 0 50px;
+  background-color: #001120;
+  background-image: url(../images/indonesia.png);
+  background-size: 100%;
+  background-position: 0px 50px;
+  background-repeat: no-repeat;
+}
+
+/* --- Sitemap ---- */
+.site-column, .right-footer {
+  float: none;
+}
+.site-column {
+  text-align: center;
+  li {
+    margin: 15px 0 0;
+    padding: 4px 0px;
+  }
+}
+/* --- Channel ---- */
+.channel {
+  margin: 0;
+  ul {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+  }
+  .hidden-sitemap {
+    margin: 0;
+  }
+}
+/* --- Management ---- */
+.management {
+  margin: 20px 0 0;
+  li {
+    &:last-of-type {
+      border-right: none;
+    }
+  }
+  .footer-unhide {
+    display: inline-block;
+    padding: 0 10px;
+    border-right: 1px solid #FFF;
+  }
+}
+
+/* --- Copyright ---- */
+.copyright {
+  background-color: #001120;
+}

@@ -1,0 +1,260 @@
+@charset 'utf-8';
+/* ==========================================================================
+Author        :  Arif Lutfhansah
+Create        :  20 April 2018
+Last Update   :  20 April 2018
+
+Source  :
+  1: Arif Framework The MIT License (MIT) Copyright (c) Arif Lutfhansah
+  2: Bootstrap Framework The MIT License (MIT) Copyright (c) Bootstrap
+  3: Materialize Framework The MIT License (MIT) Copyright (c) 2014-2017 Materialize
+
+Contents  :
+  1: Media Query for MDPI (width 993px-1082px) Section
+
+  Copyright (c) 2018 Arif Lutfhansah
+  
+========================================================================== */
+
+/*
+  Header
+-------------------------------------*/
+/* --- Language ---- */
+.language {
+  margin-right: 5px;
+  padding: 13px 0 7px;
+  &.home {
+    padding: 10px 0 5px;
+  }
+  i {
+    zoom: 0.86;
+  }
+}
+/* --- MNC Group ---- */
+.mnc-group {
+  left: 7px;
+}
+/* --- Navigation Kanal ---- */
+.nav-kanal {
+  li {
+    &:nth-child(8), &:nth-child(9), &:nth-child(10), &:nth-child(11), &:nth-child(12) {
+      display: none;
+    }
+  }
+}
+#dropdown-kanal {
+  .xhdpi,.hdpi,.mdpi {
+    display: block;
+  }
+}
+/* --- Social Media ---- */
+.social {
+  /* --- Social Media Header [Home] ---- */
+  &.social-header {
+    li {
+      margin: 9px 0 7px;
+    }
+    i {
+      width: 22px;
+      padding: 3px 0;
+    }
+  }
+}
+/* --- Logo ---- */
+.logo {
+  padding: 23px 0 19px;
+  .sindonews {
+    zoom: 0.8;
+  }
+}
+/* --- R Header ---- */
+.r_header {
+  padding: 24px 0 23px;
+  zoom: .65;
+}
+/* --- Ornamen Header ---- */
+.ornamen-header {
+  width: 1040px;
+}
+/* --- Subkanal Navigation ---- */
+.nav-subkanal {
+  top: -45px;
+  margin-bottom: -45px;
+  a {
+    padding: 11px 7px 12px;
+  }
+}
+/* --- Background Navigation ---- */
+.backgound-nav {
+  top: -108px;
+  margin-bottom: -108px;
+  height: 40px;
+}
+
+/*
+  Navigation
+-------------------------------------*/
+/* --- Navigation ---- */
+.navigation {
+  a {
+    padding: 11px 7px;
+    font-size: 14px;
+  }
+}
+
+/*
+  Main Visual
+-------------------------------------*/
+/* --- Headline ---- */
+.headline {
+  .big {
+    width: 430px;
+    height: 305px;
+    a {
+      width: 390px;
+      height: 305px;
+      img {
+        width: 450px;
+        height: 305px;
+      }
+    }
+    .caption {
+      top: -130px;
+      a {
+        max-height: 68px;
+        font-size: 24px;
+        line-height: 33px;
+      }
+      p {
+        height: 50px;
+        padding: 30px 0 0 0;
+        font-size: 12px;
+      }
+    }
+    &:hover {
+      .caption {
+        top: -179px;
+      }
+    }
+  }
+  .small {
+    width: 190px;
+    height: 143px;
+    margin-left: 15px;
+    .box {
+      width: 190px;
+      height: 143px;
+    }
+    .images {
+      width: 190px;
+      height: 143px;
+      img {
+        width: 190px;
+        height: 143px;
+      }
+    }
+    .caption {
+      top: -126px;
+    }
+  }
+  .category {
+    font-size: 11px;
+    line-height: 9px;
+  }
+}
+
+/*
+  Body
+-------------------------------------*/
+.leftbar {
+  width: 170px;
+  margin: 0 15px 0 0;
+}
+.content {
+  width: 470px;
+  margin: 0 15px 120px 0;
+}
+.rightbar {
+  width: 170px;
+}
+/* --- Editor Choice ---- */
+.editor-choice {
+  .image {
+    width: 38px;
+    height: 38px;
+    img {
+      width: 38px;
+      height: 38px;
+    }
+  }
+  .caption {
+    width: 95px;
+  }
+}
+/* --- Terpopuler ---- */
+.terpopuler {
+  .caption {
+    width: 105px;
+  }
+}
+/* --- List News ---- */
+.list-news {
+  .reverse {
+    .caption {
+      width: 250px;
+    }
+    .image {
+      width: 190px;
+      height: 125px;
+        img {
+          width: 190px;
+          height: 125px;
+        }
+    }
+  }
+  .caption {
+    width: 310px;
+  }
+  .title {
+    a {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+  .text {
+    font-size: 12px;
+  }
+  .category, time {
+    font-size: 11px;
+  }
+}
+/* --- Opini ---- */
+.opini {
+  .caption {
+    width: 75px;
+  }
+}
+/* --- Tajuk Sindo ---- */
+.tajuk-sindo {
+  .caption {
+    width: 75px;
+  }
+}
+/* --- Hot Topic ---- */
+.hot-topic {
+  .caption {
+    width: 125px;
+  }
+}
+
+/*
+  Footer
+-------------------------------------*/
+.footer-top {
+  background-size: 620px;
+  background-position: 0px 272px;
+}
+/* --- Sitemap ---- */
+.site-column {
+  margin-left: 50px;
+}

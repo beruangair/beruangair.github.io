@@ -1,0 +1,109 @@
+@charset 'utf-8';
+/* ==========================================================================
+Author        :  Arif Lutfhansah
+Create        :  15 May 2017
+Last Update   :  22 May 2017
+
+Contents  :
+  1: Title Section
+  
+========================================================================== */
+
+/*
+  Title Underline
+-------------------------------------*/
+.title-underline {
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  .caption {
+    padding: 0 0 5px 0;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .date {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+  .plus {
+    position: relative;
+    top: 1px;
+    padding: 10px;
+    background-color: #004a8e;
+    line-height: 9px;
+    svg {
+      fill: #FFF;
+    }
+  }
+}
+
+/*
+  Title Line
+-------------------------------------*/
+.title-line {
+  padding: 0 10px;
+  border-top-width: 2px;
+  border-top-style: solid;
+  .caption {
+    position: relative;
+    top: -1px;
+    padding: 0 0 5px 0;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-top-width: 1px;
+    border-top-style: solid;
+  }
+  .more {
+    margin: 10px 0;
+    padding: 3px 12px 5px;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #004a8e;
+    border-radius: 8px;
+  }
+}
+
+/*
+  Title Flat
+-------------------------------------*/
+.title-flat {
+  display: block;
+  padding: 10px 12px 12px;
+  color: #FFF;
+  font-size: 14px;
+  line-height: 14px;
+  background-color: #354A5D;
+  .caption {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .plus {
+    line-height: 9px;
+    svg {
+      fill: #FFF;
+    }
+  }
+}
+
+/*
+  Title Square
+-------------------------------------*/
+.title-square {
+  color: #FFF;
+  font-size: 14px;
+  line-height: 14px;
+  .caption {
+    padding: 11px 12px 12px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #354A5D;
+  }
+  .plus {
+    margin: 12px;
+    line-height: 9px;
+  }
+}

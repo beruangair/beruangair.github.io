@@ -1,0 +1,225 @@
+@charset 'utf-8';
+/* ==========================================================================
+Author        :  Arif Lutfhansah
+Create        :  21 Agustus 2017
+Last Update   :  21 Agustus 2017
+
+Source  :
+  1: Arif Framework The MIT License (MIT) Copyright (c) Arif Lutfhansah
+  2: Bootstrap Framework The MIT License (MIT) Copyright (c) Bootstrap
+  3: Materialize Framework The MIT License (MIT) Copyright (c) 2014-2017 Materialize
+
+Contents  :
+  1: Header Section
+
+  Copyright (c) 2017 Arif Lutfhansah
+  
+========================================================================== */
+
+/*
+  Header Top
+-------------------------------------*/
+.header-top {
+	&.home {
+		background-color: #F5F5F5;
+	}
+	&.kanal {
+		background-color: #01579B;
+	}
+}
+/* --- Language ---- */
+.language {
+	padding: 11px 0 7px;
+	margin-right: 45px;
+	&.home {
+		padding: 8px 0 5px;
+	}
+	i {
+		display: inline-block;
+		width: 30px;
+		height: 20px;
+		margin: 0 8px 0 0;
+		@include transition(.3s);
+		&:hover {
+			opacity: .7;
+		}
+	}
+	.en {
+		background-position: -110px -24px;
+	}
+	.id {
+		background-position: -110px -3px;
+	}
+}
+/* --- MNC Group ---- */
+.mnc-group {
+	position: relative;
+	left: 370px;
+	li {
+		display: inline-block;
+		padding: 11px 8px 9px 3px;
+		&:last-of-type {
+			a {
+				border-right: none;
+			}
+		}
+	}
+  a {
+    padding-right: 10px;
+    color: #01579B;
+    font: 13px $tahoma;
+    font-weight: 700;
+    border-right: 2px solid #01579B;
+    @include transition(.3s);
+    &:hover {
+      color: #D32F2F;
+    }
+  }
+}
+/* --- Navigation Kanal ---- */
+.nav-kanal {
+  li {
+    display: inline-block;
+    &:nth-child(13), &:nth-child(14) {
+      display: none;
+    }
+    a {
+      display: block;
+      padding: 12.5px 10px 13.5px;
+      color: #fff;
+      font: 14px $tahoma;
+      font-weight: 700;
+    }
+    &:hover {
+      background: #C62828;
+    }
+    &:last-of-type {
+      a {
+        width: 106px;
+        padding: 12.5px 10px 13.5px;
+      }
+    }
+  }
+}
+#dropdown-kanal {
+  li {
+    display: none;
+  }
+  .xhdpi {
+    display: block;
+  }
+}
+/* --- Sosmed Home --- */
+.sosmed-home {
+  li {
+    display: inline-block;
+    padding: 7px 4px;
+    i {
+      width: 23px;
+      padding: 5px 0;
+      color: #FFF;
+      font-size: 13px;
+      text-align: center;
+      border-radius: 4px;
+    }
+    & .fa-facebook {
+      background: #01579B;
+    }
+    & .fa-twitter {
+      background: #40C4FF;
+    }
+    & .fa-google-plus {
+      background: #F44336;
+    }
+    & .fa-rss {
+      background: #FB8C00;
+    }
+  }
+}
+/* --- Sosmed Kanal --- */
+.sosmed-kanal {
+  li {
+    display: inline-block;
+    a {
+      display: block;
+      padding: 8px;
+      color: #51aafc;
+      font-size: 18px;
+      @include transition(.3s);
+      &:hover {
+        color: #C5E3FE;
+      }
+    }
+  }
+}
+/* --- Social Media ---- */
+.social {
+	li {
+	  display: inline-block;
+	  padding: 0 3px;
+	  margin: 20px 0 50px 0;
+	  color: #f3bb32;
+	  font-size: 16px;
+	  i {
+	  	width: 45px;
+		  padding: 12px 0;
+		  color: #fff;
+		  background: #282828;
+		  font-size: 20px;
+		  text-align: center;
+	  }
+	}
+}
+
+/*
+  Header Bottom
+-------------------------------------*/
+/* --- Logo --- */
+.logo {
+  padding: 31px 0 27px;
+  @include transition(.3s);
+  &:hover {
+    opacity: .7;
+  }
+  .sindonews {
+    width: 400px;
+    height: 63px;
+    background-position: -5px -56px;
+  }
+}
+/* --- R Header --- */
+.r_header {
+  padding: 16px 0 10px;
+  @include transition(.3s);
+  &:hover {
+    opacity: .7;
+  }
+}
+/* --- Header Mobile --- */
+.header-mobile {
+  display: none;
+}
+.down-caret {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 5px 0 5px;
+  border-color: #212121 transparent transparent transparent;
+  display: inline-block;
+  margin-left: 12px;
+  top: -2px;
+  position: relative;
+  transform: rotate(0deg);
+  transition: all 0.25s ease-in;
+}
+.right-caret {
+  width: 0;
+  height: 0;
+  margin: 4.5px 0 0 0;
+  border-style: solid;
+  border-width: 5px 5px 5px 8px;
+  border-color: transparent transparent transparent #212121;
+  display: inline-block;
+  transform: rotate(0deg);
+  transition: all 0.25s ease-in;
+}

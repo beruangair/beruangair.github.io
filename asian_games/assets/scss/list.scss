@@ -1,0 +1,140 @@
+@charset 'utf-8';
+/* ==========================================================================
+Author        :  Arif Lutfhansah
+Create        :  15 May 2017
+Last Update   :  22 May 2017
+
+Contents  :
+  1: Body Section
+  
+========================================================================== */
+
+/*
+  List
+-------------------------------------*/
+
+/* --- List Mini ---- */
+.list-mini {
+  li {
+    padding: 12px;
+    background-color: #FFF;
+    border-bottom: 1px dotted #BDBDBD;
+    @include transition(.4s);
+    &:hover {
+      background-color: #EEE;
+      .rank {
+        color: #FB8C00;
+      }
+    }
+    &:last-of-type {
+      border-bottom: none;
+      .rank {
+        padding: 0;
+      }
+    }
+  }
+  .caption {
+    width: 105px;
+    overflow: hidden;
+    a {
+      font-family: Tahoma, Geneva, sans-serif;
+      display: block;
+      color: #263238;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 20px;
+      @include transition(.4s);
+    }
+  }
+  .rank {      
+    color: #a8a8a8;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 700;
+    padding: 0 7px;
+    text-shadow: 1px 1px 0 rgba(255,255,255,1);
+    @include transition(.4s);
+  }
+  .image {
+    width: 58px;
+    height: 58px;
+      img {
+        width: 58px;
+        height: 58px;
+        object-fit: cover;
+      }
+  }
+}
+
+/* --- List News ---- */
+.list-news {
+  li {
+    padding: 12px;
+    background-color: #FFF;
+    border-bottom: 1px dotted #BDBDBD;
+    @include transition(.4s);
+    &:hover {
+      background-color: #EEE;
+    }
+    &:last-of-type {
+      border-bottom: none;
+    }
+    &.reverse {
+      .caption {
+        width: 360px;
+      }
+      .image {
+        width: 220px;
+        height: 145px;
+          img {
+            width: 220px;
+            height: 145px;
+            object-fit: cover;
+          }
+      }
+    }
+    .caption {
+      width: 460px;
+      overflow: hidden;
+      .header {
+        padding: 0 0 5px 0;
+        time {
+          color: #757575;
+          vertical-align: middle;
+        }
+      }
+      .subtitle {
+        padding: 2px 0;
+        font-size: 14px;
+      }
+      .title {
+        a {
+          font-family: Tahoma, Geneva, sans-serif;
+          display: block;
+          padding: 0 0 5px 0;
+          color: #212121;
+          font-size: 22px;
+          font-weight: 700;
+          line-height: 31px;
+          @include transition(.4s);
+        }
+      }
+      .text {
+        font-size: 14px;
+        line-height: 22px;
+      }
+    }
+    .image {
+      width: 120px;
+      height: 80px;
+        img {
+          width: 120px;
+          height: 80px;
+          object-fit: cover;
+        }
+    }
+  }
+  .btn-index {
+    
+  }
+}

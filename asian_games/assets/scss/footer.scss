@@ -1,0 +1,217 @@
+@charset 'utf-8';
+/* ==========================================================================
+Author        :  Arif Lutfhansah
+Create        :  15 May 2017
+Last Update   :  23 May 2017
+
+Contents  :
+  1: Footer Section
+  
+========================================================================== */
+
+/*
+  Footer
+-------------------------------------*/
+
+/* --- Footer Top ---- */
+.footer-top {
+  padding: 20px 0 50px;
+  background: #363636;
+  border-top-width: 5px;
+  border-top-style: solid;
+}
+
+/* --- Logo Footer ---- */
+.logo-footer {
+  width: 323px;
+  height: 31px;
+  margin-bottom: 5px;
+  background-position: -2px -130px;
+}
+
+/* --- Social Media Footer ---- */
+.social.social-footer {
+  li {
+    margin: 20px 0 40px 0;
+    &:nth-child(1) {
+      font-weight: 700;
+    }
+    i {
+      background-color: #282828;
+      &.fa-facebook {
+        &:hover {
+          background-color: #4968A8;
+        }
+      }
+      &.fa-twitter {
+        &:hover {
+          background-color: #2AA3EF;
+        }
+      }
+      &.fa-google-plus {
+        &:hover {
+          background-color: #F44336;
+        }
+      }
+      &.fa-rss {
+        &:hover {
+          background-color: #FB8C00;
+        }
+      }
+    }
+  }
+}
+
+/* --- MNC Media ---- */
+.mnc-media {
+  width: 114px;
+  height: 58px;
+  background-position: 6px 2px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+/* --- Sitemap ---- */
+.site-column {
+  float: left;
+  margin-left: 80px;
+  span {
+    display: block;
+    color: #f3bb32;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+  }
+  li {
+    padding: 2px 0px;
+    a {
+      color: #fff;
+      font-size: 14px;
+      font-weight: 700;
+      &:hover {
+        color: #f3bb32;
+      }
+    }
+  }
+}
+
+/* --- Copyright ---- */
+.copyright {
+  padding: 11px 0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  background: #282828;
+  text-align: center;
+  small {
+    font-size: 10px;
+    opacity: .7;
+  }
+}
+
+/* --- Back To Top ---- */
+.backtop {
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+  cursor: pointer;
+  @include transition(.3s);
+  svg {
+    fill: #fff;
+    padding: 7px;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+}
+
+/*
+  Footer V2
+-------------------------------------*/
+.footerv2 .footer-main {
+  background-color:#024a90;
+  border-top:5px solid #d21524;
+}
+.footerv2 .footer-main .container {
+  padding:25px 0;
+}
+.footerv2 .site-column {
+  float: none;
+  margin: 0 0 10px 0;
+}
+.footerv2 .sitemap h3 {
+  min-width:130px;
+  color:#f3bb32;
+  font-size:16px;
+  font-weight:600;
+  line-height:18px;
+}
+.footerv2 .sitemap li {
+  display:inline-block;
+  line-height:8px;
+  border-right:1px solid #fff;
+  padding:2px 10px 2px 6px;
+}
+.footerv2 .management-sitemap li,.sitemap li:last-of-type {
+  border-right:none;
+}
+.footerv2 .sitemap .header-sitemap {
+  padding-right:10px;
+  color:#f3bb32;
+  font-size:16px;
+  font-weight:700;
+}
+.footerv2 .sitemap a:hover {
+  color:#f3bb32;
+}
+.footerv2 .sitemap a {
+  color:#fff;
+  font-size:14px;
+}
+.footerv2 .partner {
+  position: relative;
+  right: 15px;
+}
+.footerv2 .copyright {
+  color:#fff;
+  background-color:#00356a;
+  text-align:center;
+}
+.footerv2 .copyright p {
+  padding:10px 0;
+}
+.footerv2 .sitemap .hidden-sitemap,.native-app {
+  display:none;
+}
+@media screen and (max-width:1200px) {
+  .sitemap li {
+    padding:2px 6px 2px 2px;
+  }
+  .sitemap h3 {
+    min-width:120px;
+  }
+  .footer-main .col-md-11 {
+    float:none!important;
+    width:890px;
+    margin:0 auto 30px;
+  }
+  .footer-main .col-md-1 {
+    float:none!important;
+    width:119px;
+    margin:0 auto;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .footer-main .col-md-11 {
+    width:100%;
+  }
+  .sitemap h3 {
+    float:none!important;
+    width:120px;
+    text-align:center;
+    clear:both;
+    margin:0 auto;
+  }
+}

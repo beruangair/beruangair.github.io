@@ -38,6 +38,11 @@ nav {
       line-height: 55px;
     }
   }
+  ul {
+    a {
+      padding: 0 4px;
+    }
+  }
 }
 #nav-mobile {
   display: none;

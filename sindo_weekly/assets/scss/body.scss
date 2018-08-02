@@ -99,10 +99,7 @@ Contents  :
   }
 }
 .medium {
-  .news {
-    height: 383px;
-    margin-bottom: 20px;
-  }
+  margin: 20px 0;
 }
 .small {
   margin: 20px 0;
@@ -112,11 +109,17 @@ Contents  :
     }
   }
 }
-/* --- Latest News --- */
-.latest {
-  .head {
-    border-top: 1px solid #ccc;
+/* --- Multimedia --- */
+.latest-news, .multimedia {
+  .head-title {
+    h2 {
+      margin: 0;
+    }
   }
+}
+/* --- Head --- */
+.head-title {
+  border-top: 1px solid #ccc;
   h2 {
     position: relative;
     padding: 10px 30px;
@@ -141,18 +144,19 @@ Contents  :
     }
   }
   .btn {
-    display: block;
-    width: 250px;
-    height: 50px;
-    line-height: 50px;
-    margin: 30px auto 50px;
-    font-size: 18px;
+    position: relative;
+    top: -25px;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+    font-size: 12px;
     text-transform: uppercase;
   }
 }
+/* --- Latest News --- */
 .latest-list {
-  margin-top: 40px;
-  border-bottom: 1px solid #e8e8e8;
+  margin: 10px 0 30px;
   .col-md-4 {
     height: 360px;
     padding: 0 32px;
@@ -181,5 +185,87 @@ Contents  :
   }
   .image {
     margin-bottom: 10px;
+  }
+}
+/* --- Title Underline ---- */
+.title-underline {
+  border-color: #B70000;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  .head {
+    padding: 0 0 5px 0;
+    color: #B70000;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .date {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+  .plus {
+    position: relative;
+    top: 1px;
+    padding: 10px;
+    background-color: #004a8e;
+    line-height: 9px;
+    svg {
+      fill: #FFF;
+    }
+  }
+}
+/* --- List Mini ---- */
+.list-mini {
+  ul {
+    margin-top: 0;
+  }
+  li {
+    padding: 12px;
+    background-color: #FFF;
+    border-bottom: 1px dotted #BDBDBD;
+    @include transition(.2s);
+    &:hover {
+      background-color: #B70000;
+      a, .rank {
+        color: #FFF;
+      }
+    }
+    &:last-of-type {
+      border-bottom: none;
+      .rank {
+        padding: 0;
+      }
+    }
+  }
+  .caption {
+    width: 235px;
+    overflow: hidden;
+    a {
+      font-family: Tahoma, Geneva, sans-serif;
+      display: block;
+      color: #000;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 20px;
+      @include transition(.2s);
+    }
+  }
+  .rank {      
+    color: #B70000;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 700;
+    padding: 0 7px;
+    text-shadow: 1px 1px 0 rgba(255,255,255,1);
+    @include transition(.2s);
+  }
+  .image {
+    width: 58px;
+    height: 58px;
+      img {
+        width: 58px;
+        height: 58px;
+        object-fit: cover;
+      }
   }
 }

@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'transition'.
-        on line 226 of /Applications/XAMPP/xamppfiles/htdocs/beruangair.github.io/sindo_weekly/assets/scss/body.scss, in `transition'
-        from line 226 of /Applications/XAMPP/xamppfiles/htdocs/beruangair.github.io/sindo_weekly/assets/scss/body.scss
+        on line 184 of /Applications/XAMPP/xamppfiles/htdocs/beruangair.github.io/sindo_weekly/assets/scss/body.scss, in `transition'
+        from line 184 of /Applications/XAMPP/xamppfiles/htdocs/beruangair.github.io/sindo_weekly/assets/scss/body.scss
 
-221:   }
-222:   li {
-223:     padding: 12px;
-224:     background-color: #FFF;
-225:     border-bottom: 1px dotted #BDBDBD;
-226:     @include transition(.2s);
-227:     &:hover {
-228:       background-color: #B70000;
-229:       a, .rank {
-230:         color: #FFF;
-231:       }
+179:         line-height: 28px;
+180:       }
+181:     }
+182:   }
+183:   img {
+184:     @include transition(.3s);
+185:     &:hover {
+186:       opacity: .7;
+187:     }
+188:   }
+189:   .detail {
 
 Backtrace:
-/Applications/XAMPP/xamppfiles/htdocs/beruangair.github.io/sindo_weekly/assets/scss/body.scss:226:in `transition'
-/Applications/XAMPP/xamppfiles/htdocs/beruangair.github.io/sindo_weekly/assets/scss/body.scss:226
+/Applications/XAMPP/xamppfiles/htdocs/beruangair.github.io/sindo_weekly/assets/scss/body.scss:184:in `transition'
+/Applications/XAMPP/xamppfiles/htdocs/beruangair.github.io/sindo_weekly/assets/scss/body.scss:184
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:98:in `block in with_mixin'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
@@ -81,4 +81,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'transition'.\A         on line 226 of /Applications/XAMPP/xamppfiles/htdocs/beruangair.github.io/sindo_weekly/assets/scss/body.scss, in `transition'\A         from line 226 of /Applications/XAMPP/xamppfiles/htdocs/beruangair.github.io/sindo_weekly/assets/scss/body.scss\A \A 221:   }\A 222:   li {\A 223:     padding: 12px;\A 224:     background-color: #FFF;\A 225:     border-bottom: 1px dotted #BDBDBD;\A 226:     @include transition(.2s);\A 227:     &:hover {\A 228:       background-color: #B70000;\A 229:       a, .rank {\A 230:         color: #FFF;\A 231:       }"; }
+  content: "Error: Undefined mixin 'transition'.\A         on line 184 of /Applications/XAMPP/xamppfiles/htdocs/beruangair.github.io/sindo_weekly/assets/scss/body.scss, in `transition'\A         from line 184 of /Applications/XAMPP/xamppfiles/htdocs/beruangair.github.io/sindo_weekly/assets/scss/body.scss\A \A 179:         line-height: 28px;\A 180:       }\A 181:     }\A 182:   }\A 183:   img {\A 184:     @include transition(.3s);\A 185:     &:hover {\A 186:       opacity: .7;\A 187:     }\A 188:   }\A 189:   .detail {"; }

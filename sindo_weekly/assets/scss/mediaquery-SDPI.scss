@@ -30,7 +30,7 @@ Contents  :
 nav {
   ul {
     a {
-      padding: 0 4px;
+      padding: 0 3px;
     }
   }
 }
@@ -67,5 +67,30 @@ nav {
 .r-side {
   img {
     width: 100%;
+  }
+}
+/* --- List News ---- */
+.list-news {
+  .item {
+    &:first-of-type {
+      img {
+        width: 255px;
+      }
+      .caption {
+        max-height: 115px;
+      }
+    }
+  }
+  .col-md-9 {
+    width: 340px;
+    .caption {
+      padding: 0;
+    }
+  }
+}
+/* --- List Mini ---- */
+.list-mini {
+  .caption {
+    width: 135px;
   }
 }

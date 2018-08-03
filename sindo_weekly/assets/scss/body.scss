@@ -16,10 +16,52 @@ Contents  :
 .r-center {
   display: block;
   width: 728px;
-  margin: 0 auto 30px;
+  margin: 0 auto;
 }
 .center {
   padding-right: 30px;
+}
+/* --- Breadcrumb ---- */
+.breadcrumb {
+  margin: 0 0 15px;
+  border-bottom: 1px solid #CCC;
+  h1 {
+    display: inline-block;
+    padding: 0 15px 0 5px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 23px;
+    text-transform: uppercase;
+    border-left-width: 10px;
+    border-left-style: solid;
+  }
+  time {
+    position: relative;
+    bottom: 3px;
+    font-size: 18px;
+  }
+  ul {
+    margin: 0;
+    padding: 0 0 6px 0;
+    border-bottom-width: 1px;
+    border-style: solid;
+  }
+  li {
+    display: inline-block;
+    color: #B70000;
+    font-size: 15px;
+    font-weight: 600;
+    padding-right: 4px;
+  }
+  a {
+    color: #282828;
+    font-size: 14px;
+    font-weight: 700;
+  }
+}
+/* --- Content --- */
+.content {
+  margin-top: 30px;
 }
 /* --- News --- */
 .news {
@@ -100,6 +142,9 @@ Contents  :
 }
 .medium {
   margin: 20px 0;
+  &.no-top {
+    margin-top: 0;
+  }
 }
 .small {
   margin: 20px 0;
@@ -114,6 +159,64 @@ Contents  :
   .head-title {
     h2 {
       margin: 0;
+    }
+  }
+}
+/* --- List News ---- */
+.list-news {
+  .item {
+    padding: 15px 0;
+    border-top-width: 1px;
+    border-top-style: dotted;
+    &:first-of-type {
+      border-top: none;
+      padding: 10px 0 20px;
+      img {
+        width: 435px;
+      }
+      .caption {
+        font-size: 24px;
+        line-height: 28px;
+      }
+    }
+  }
+  img {
+    @include transition(.3s);
+    &:hover {
+      opacity: .7;
+    }
+  }
+  .detail {
+    height: 42px;
+    margin-top: 8px;
+    color: #656565;
+    font-size: 14px;
+    overflow: hidden;
+  }
+  .col-md-3 {
+    width: 180px;
+    margin-right: 20px;
+  }
+  .field-news {
+    a {
+      @include transition(.3s);
+      &:hover {
+        color: #B70000;
+      }
+    }
+    .caption {
+      display: block;
+      max-height: 70px;
+      padding: 3px 0 0;
+      color: #282828;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.5;
+      overflow: hidden;
+    }
+    time {
+      color: #808080;
+      font-size: 12px;
     }
   }
 }
@@ -155,8 +258,11 @@ Contents  :
   }
 }
 /* --- Latest News --- */
+.block {
+  margin-top: 30px;
+}
 .latest-list {
-  margin: 10px 0 30px;
+  margin: 10px 0;
   .col-md-4 {
     height: 360px;
     padding: 0 32px;

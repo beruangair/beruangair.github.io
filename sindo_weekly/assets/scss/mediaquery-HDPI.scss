@@ -27,3 +27,25 @@ nav {
     }
   }
 }
+/*
+  Main
+-------------------------------------*/
+/* --- List News ---- */
+.list-news {
+  .item {
+    &:first-of-type {
+      img {
+        width: 365px;
+      }
+    }
+  }
+  .col-md-9 {
+    width: 560px;
+  }
+}
+/* --- List Mini ---- */
+.list-mini {
+  .caption {
+    width: 195px;
+  }
+}

@@ -55,6 +55,9 @@ nav {
 /*
   Main
 -------------------------------------*/
+.content {
+  margin-top: 10px;
+}
 .col-md-9, .col-md-6, .col-md-3 {
   width: 100%;
   padding: 0;
@@ -117,6 +120,9 @@ nav {
       &:nth-child(odd), &:nth-child(even) {
         padding: 0;
       }
+      &:nth-child(odd) {
+        margin-bottom: 20px;
+      }
     }
   }
 }
@@ -142,6 +148,59 @@ nav {
 .r-side {
   img {
     width: 100%;
+  }
+}
+/* --- Head --- */
+.head-title {
+  h2 {
+    width: 200px;
+    margin: 0;
+  }
+  .btn {
+    top: -36px;
+    right: 5px;
+  }
+}
+/* --- List News ---- */
+.list-news {
+  .item {
+    border: none;
+    &:first-of-type {
+      img {
+        width: 100%;
+      }
+      .caption {
+        max-height: 115px;
+      }
+    }
+    img {
+      width: 100%;
+    }
+  }
+  .field-news {
+    padding: 0 15px;
+    margin-top: 10px;
+  }
+  .col-md-3 {
+    width: 100%;
+    .caption {
+      padding: 0;
+    }
+  }
+  .col-md-9 {
+    width: 100%;
+    .caption {
+      padding: 0;
+    }
+  }
+  .detail {
+    margin-bottom: 0;
+  }
+}
+/* --- List Mini ---- */
+.list-mini {
+  .caption {
+    width: 85%;
   }
 }
 

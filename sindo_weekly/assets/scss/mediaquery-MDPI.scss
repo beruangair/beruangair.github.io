@@ -63,3 +63,28 @@ nav {
     width: 100%;
   }
 }
+/* --- List News ---- */
+.list-news {
+  .item {
+    &:first-of-type {
+      img {
+        width: 285px;
+      }
+      .caption {
+        max-height: 95px;
+      }
+    }
+  }
+  .col-md-9 {
+    width: 400px;
+    .caption {
+      padding: 0;
+    }
+  }
+}
+/* --- List Mini ---- */
+.list-mini {
+  .caption {
+    width: 150px;
+  }
+}

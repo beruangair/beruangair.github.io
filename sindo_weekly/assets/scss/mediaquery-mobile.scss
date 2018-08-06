@@ -203,6 +203,36 @@ nav {
     width: 85%;
   }
 }
+/* --- Detail News ---- */
+.detail-news {
+  .category {
+    font-size: 14px;
+  }
+  .title{
+    font-size: 24px;
+  }
+  .author {
+    color: #EEE;
+    padding-bottom: 3px;
+  }
+  .date {
+    color: #CACACA;
+    font-size: 12px;
+  }
+  .caption-image {
+    padding: 7px 10px;
+  }
+  .column {
+    margin: 25px 0;
+  }
+  .r-inside {
+    display: none;
+  }
+  .article {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
 
 /*
   Footer

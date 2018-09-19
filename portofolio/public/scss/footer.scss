@@ -1,0 +1,73 @@
+@charset 'utf-8';
+/* ==========================================================================
+Author        :  Arif Lutfhansah
+Create        :  21 Agustus 2017
+Last Update   :  21 Agustus 2017
+
+Source  :
+  1: Arif Framework The MIT License (MIT) Copyright (c) Arif Lutfhansah
+  2: Bootstrap Framework The MIT License (MIT) Copyright (c) Bootstrap
+  3: Materialize Framework The MIT License (MIT) Copyright (c) 2014-2017 Materialize
+
+Contents  :
+  1: Footer Section
+
+  Copyright (c) 2017 Arif Lutfhansah
+  
+========================================================================== */
+
+/*
+  Footer
+-------------------------------------*/
+/* ----- Sitemap ----- */
+#sitemap {
+	.col-md-4 {
+		padding: 0 20px;
+		.title {
+			margin: 0 0 25px;
+			font-size: 18px;
+			font-weight: 500;
+		}
+		p {
+			font-size: 14px;
+		}
+	}
+	.help {
+		.btn { 
+			margin: 30px 0 10px;
+		    background-color: #26A69A;
+		}
+	}
+	.sitemap {
+		div {
+			padding: 0 0 10px;
+			a {
+				font-size: 14px;
+			}
+			.right-caret {
+		    display: inline-block;
+		    width: 0;
+		    height: 0;
+		    margin-left: 2px;
+		    color: #000;
+		    vertical-align: middle;
+		    border-left: 6px solid;
+		    border-right: 0;
+		    border-top: 5px solid rgba(0, 0, 0, 0);
+		    border-bottom: 5px solid rgba(0, 0, 0, 0);
+		    margin-right: 8px;
+			}
+		}
+	}
+	.sosmed {
+		top: 0;
+		li {
+			padding: 0 5px;
+		}
+	}
+}
+/* ----- Copyright ----- */
+#copyright {
+	padding: 16px 20px;
+	border-top: 1px solid #EEEEEE;
+}

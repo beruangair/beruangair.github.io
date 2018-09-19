@@ -1,0 +1,88 @@
+@charset 'utf-8';
+/* ==========================================================================
+Author        :  Arif Lutfhansah
+Create        :  20 April 2018
+Last Update   :  20 April 2018
+
+Source  :
+  1: Arif Framework The MIT License (MIT) Copyright (c) Arif Lutfhansah
+  2: Bootstrap Framework The MIT License (MIT) Copyright (c) Bootstrap
+  3: Materialize Framework The MIT License (MIT) Copyright (c) 2014-2017 Materialize
+
+Contents  :
+  1: Media Query for SDPI (width 769px-992px) Section
+
+  Copyright (c) 2018 Arif Lutfhansah
+  
+========================================================================== */
+
+/*
+  Main
+-------------------------------------*/
+/* ----- Profile ----- */
+#profile {
+  .profile-inner {
+    width: 90%;
+    margin: 40px auto 0;
+  }
+}
+/* ----- Project ----- */
+#portofolio {
+  width: 90%;
+  margin: 0 auto 100px;
+}
+.project {
+  padding: 40px 0;
+  &.left {
+    .image {
+      float: none;
+    }
+  }
+  &.right {
+    .caption {
+      padding-left: 0;
+    }
+  }
+  .caption {
+    width: 100%;
+    top: 5px;
+    left: 0;
+    .title {
+      margin: 0 0 5px;
+    }
+    .text {
+      width: 100%;
+      margin-left: 0;
+      margin-top: 5px;
+    }
+    .date {
+      width: 100%;
+      margin-left: 0;
+    }
+    .more {
+      display: none;
+      padding-right: 0;
+      margin-top: 30px;
+        margin-left: 0vw;
+    }
+  }
+}
+
+/*
+  Footer
+-------------------------------------*/
+/* ----- Sitemap ----- */
+#sitemap {
+  width: 90%;
+  margin: 0 auto 80px;
+  .col-md-4 {
+    padding: 0;
+      margin: 40px 0 0;
+  }
+}
+.sitemap {
+  .col-md-6 {
+    float: left;
+    width: 150px;
+  }
+}

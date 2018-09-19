@@ -1,0 +1,58 @@
+.rslides {
+  margin: 0 auto 40px;
+}
+.callbacks_container {
+  float: left;
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.callbacks li {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.callbacks img {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+.callbacks .caption {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: none;
+  margin: 0;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 20px;
+  background: rgba(0,0,0, .8);
+  z-index: 2;
+  
+}
+.callbacks_nav {
+  position: absolute;
+  top: 52%;
+  left: 0;
+  width: 38px;
+  height: 61px;
+  margin-top: -45px;
+  opacity: 0.7;
+  text-indent: -9999px;
+  overflow: hidden;
+  z-index: 3;
+  background: transparent url("../images/slider_arrow.gif") no-repeat left top;
+}
+.callbacks_nav:active {
+  opacity: 1.0;
+}
+.callbacks_nav.next {
+  left: auto;
+  right: 0;
+  background-position: right top;
+}

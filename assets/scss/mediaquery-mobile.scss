@@ -1,0 +1,99 @@
+@charset 'utf-8';
+/* ==========================================================================
+Author        :  Arif Lutfhansah
+Create        :  20 April 2018
+Last Update   :  20 April 2018
+
+Source  :
+  1: Arif Framework The MIT License (MIT) Copyright (c) Arif Lutfhansah
+  2: Bootstrap Framework The MIT License (MIT) Copyright (c) Bootstrap
+  3: Materialize Framework The MIT License (MIT) Copyright (c) 2014-2017 Materialize
+
+Contents  :
+  1: Media Query for Mobile (min width 769px) Section
+
+  Copyright (c) 2018 Arif Lutfhansah
+  
+========================================================================== */
+
+/*
+  Header
+------------------------------------- */
+header {
+  top: 0;
+  height: 54px;
+  -webkit-box-shadow: 0 2px 2px -2px rgba(0,0,0,.15);
+  -moz-box-shadow: 0 2px 2px -2px rgba(0,0,0,.15);
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.15);
+}
+/* ----- Logo ----- */
+.logo {
+  display: block;
+  float: none;
+  width: 65%;
+  margin: 0 auto;
+  h1 {
+    margin: 12px 0;
+    text-align: center;
+  }
+}
+/* ----- Navigation ----- */
+.navigation {
+  display: none;
+}
+/* ----- Navigation Mobile ----- */
+.navbar-toggle {
+  display: block;
+}
+
+/*
+  Main
+-------------------------------------*/
+.content {
+  top: 0;
+}
+.no-mobile {
+  display: none;
+}
+/* ----- Leftbar ----- */
+.leftbar {
+  display: none;
+}
+/* ----- Section Title ----- */
+section {
+  padding: 0 10px;
+  margin: 0 0 60px;
+  &#sitemap {
+    margin: 0 0 30px;
+  }
+}
+/* ----- Profile ----- */
+#profile {
+  .profile-inner {
+    width: 100%;
+    margin: 70px auto 0;
+    .photo {
+      width: 100%;
+    }
+    .caption {
+      .count {
+        li {
+          margin: 0 15px 0 0;
+        }
+      }
+    }
+  }
+}
+
+/*
+  Footer
+-------------------------------------*/
+/* ----- Copyright ----- */
+.copyright {
+  float: none;
+  text-align: center;
+}
+.lisence {
+  float: none;
+  text-align: center;
+}

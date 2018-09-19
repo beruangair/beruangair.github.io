@@ -1,0 +1,68 @@
+@charset 'utf-8';
+/* ==========================================================================
+Author        :  Arif Lutfhansah
+Create        :  20 April 2018
+Last Update   :  20 April 2018
+
+Source  :
+  1: Arif Framework The MIT License (MIT) Copyright (c) Arif Lutfhansah
+  2: Bootstrap Framework The MIT License (MIT) Copyright (c) Bootstrap
+  3: Materialize Framework The MIT License (MIT) Copyright (c) 2014-2017 Materialize
+
+Contents  :
+  1: Media Query for Mobile (max width 450px) Section
+
+  Copyright (c) 2018 Arif Lutfhansah
+  
+========================================================================== */
+
+/*
+  Main
+-------------------------------------*/
+/* ----- Sosmed ----- */
+.sosmed {
+  left: 0;
+  li {
+    padding: 0 5px;
+    &:first-child {
+      padding: 0 5px 0 0;
+    }
+  }
+}
+/* ----- Profile ----- */
+#profile {
+  .caption {
+    text-align: center;
+    .name {
+      h2 {
+        display: block;
+      }
+    }
+    .count {
+      ul {
+        -webkit-column-count: 3;
+          -moz-column-count: 3;
+          column-count: 3;
+      }
+      li {
+        display: inherit;
+        margin: 0 !important;
+        text-align: center;
+        span {
+          display: block;
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
+/*
+  Footer
+-------------------------------------*/
+/* ----- Sitemap ----- */
+.sitemap {
+  .col-md-6 {
+    width: 120px;
+  }
+}

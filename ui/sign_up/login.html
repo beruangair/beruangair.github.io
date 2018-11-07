@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta SEO Default -->
+	<title>Login</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="title" content="Login">
+	<meta name="description" content="Login Form">		
+
+	<!-- Start CSS Link From Here -->
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:500,700" rel="stylesheet"> <!-- Font Quicksand -->
+	<link rel="stylesheet" href="assets/css/styles.css"> <!-- Styles -->
+	<link rel="stylesheet" href="assets/css/mediaquery-HDPI.css" media="screen and (min-width: 1083px) and (max-width: 1290px)"> <!-- HDPI Screen -->
+	<link rel="stylesheet" href="assets/css/mediaquery-MDPI.css" media="screen and (min-width: 993px) and (max-width: 1082px)"> <!-- MDPI Screen -->
+	<link rel="stylesheet" href="assets/css/mediaquery-SDPI.css" media="screen and (min-width: 769px) and (max-width: 992px)"> <!-- SDPI Screen -->
+	<link rel="stylesheet" href="assets/css/mediaquery-mobile.css" media="screen and (max-width: 768px)"> <!-- Mobile Screen -->
+	<!-- Start CSS Link End Here -->
+</head>
+<body>
+  <div class="back-gradient"></div>
+	<main>
+    <div class="form">
+      <div class="head">
+        <h1>Login</h1>
+        <p>Fill in all informations</p>
+      </div>
+      <form>
+        <div class="input-section email-section">
+          <input class="email" type="email" placeholder="ENTER YOUR E-MAIL HERE" autocomplete="off"/>
+          <input id="email_val" type="hidden" value="">
+          <div class="animated-button">
+            <span class="icon-email"><i class="material-icons">email</i></span>
+            <span class="next-button email"><i class="material-icons">arrow_forward</i></span>
+          </div>
+        </div>
+        <div class="input-section password-section folded">
+          <input class="password" type="password" placeholder="ENTER YOUR PASSWORD HERE"/>
+          <input id="password_val" type="hidden" value="">
+          <div class="animated-button">
+            <span class="icon-lock"><i class="material-icons">lock</i></i></span>
+            <span class="next-button password"><i class="material-icons">arrow_forward</i></span>
+          </div>
+        </div>
+        <div class="success"> 
+          <p>LOGIN SUCCES</p>
+        </div>
+      </form>
+    </div>
+    <div class="signup-helper">Don't have account? <a href="singup.html">Sign Up</a></div>
+	</main>
+	<script src='assets/js/jquery-1.10.2.min.js'></script> <!-- jQuery -->
+  <script src='assets/js/materialize.min.js'></script> <!-- Materialize -->
+  <script src='assets/js/login.js'></script> <!-- Login -->
+	<script>
+		$(document).ready(function() {
+		});
+	</script>
+</body>
+</html>

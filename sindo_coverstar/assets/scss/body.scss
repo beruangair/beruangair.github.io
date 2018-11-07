@@ -1,0 +1,234 @@
+@charset 'utf-8';
+/* ==========================================================================
+Author        :  Arif Lutfhansah
+Create        :  20 April 2018
+Last Update   :  20 April 2018
+
+Contents  :
+  1: Body Section
+  
+========================================================================== */
+main {
+	position: relative;
+	top: 112px;
+  background-color: #1A1A26;
+}
+
+/*
+  Color
+-------------------------------------*/
+section {
+	padding: 120px 0;
+}
+
+/* --- Main Visual --- */
+.mainvisual {
+	padding: 0;
+	img {
+		width: 100%;
+		object-fit: cover;
+	}
+}
+
+/* --- About --- */
+.about {
+	&.row {
+    padding-top: 200px;
+    padding-bottom: 300px;
+  }
+}
+.row {
+  margin: 0;
+	.image {
+		width: 377px;
+		margin: 0 auto;
+	}
+	.description {
+		width: 730px;
+		.title {
+			margin-bottom: 30px;
+			color: #EA8B2C;
+			font-size: 30px;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+    .title2 {
+      margin-bottom: 30px;
+      color: #EA8B2C;
+      font-size: 60px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+		.caption {
+			color: #FFF;
+			font-size: 22px;
+		}
+	}
+}
+
+/* --- Rules --- */
+.rules {
+  padding: 0;
+  text-align: center;
+  /*background-image: url('../images/bg02.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;*/
+  .title {
+    margin-bottom: 20px;
+    color: $color;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .caption {
+    width: 70%;
+    margin: 10px auto 0;
+    color: #2F565F;
+    font-size: 24px;
+    font-weight: 700;
+  }
+}
+.rules-left, .rules-right {
+  .caption {
+    position: relative;
+    top: 130px;
+    font-size: 32px !important;
+  }
+}
+
+/* --- Competition --- */
+.competition {
+	padding: 0;
+	img {
+		width: 100%;
+		object-fit: cover;
+	}
+}
+
+/* --- Article --- */
+.article {
+	padding: 80px 0;
+	text-align: center;
+	.item {
+		float: left;
+		width: 300px;
+		margin: 20px 60px;
+		&:nth-child(2) {
+    		@include animation-delay(.2s);
+    	}
+    	&:nth-child(3) {
+    		@include animation-delay(.4s);
+    	}
+    	&:nth-child(4) {
+    		@include animation-delay(.6s);
+    	}
+    	&:nth-child(5) {
+    		@include animation-delay(.8s);
+    	}
+    	&:nth-child(6) {
+    		@include animation-delay(1s);
+    	}
+	}
+	.title {
+		margin-bottom: 20px;
+		color: $color;
+		font-size: 40px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+	.caption {
+		margin-top: 5px;
+		color: $color2;
+		font-size: 18px;
+		font-weight: 700;
+	}
+}
+
+/* --- Video --- */
+.video {
+	padding: 80px 0;
+	text-align: center;
+	/*background-image: url('../images/bg02.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;*/
+	.title {
+		margin-bottom: 20px;
+		color: $color;
+		font-size: 40px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+	.item {
+		.caption {
+			margin-top: 10px;
+			color: #2F565F;
+			font-size: 24px;
+			font-weight: 700;
+		}
+	}
+}
+
+/* --- Registration --- */
+.registration {
+	padding: 120px 0;
+	.image {
+		margin: 0 70px;
+	}
+  .winner1 {
+    color: $color;
+    font-size: 28px;
+    font-weight: 700;
+  }
+  .winner2 {
+    color: $color2;
+    font-size: 22px;
+    font-weight: 700;
+  }
+  .winner3 {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
+
+/* --- Sponsor --- */
+.sponsor {
+	padding: 60px 0 80px;
+	background-color: #F5F5F5;
+	text-align: center;
+	.title {
+		padding-bottom: 20px;
+		color: #022A30;
+		font-size: 18px;
+	}
+	img {
+		display: block;
+		width: 120px;
+		padding: 0 30px;
+		margin: 0 auto;
+	}
+}
+
+/* --- Button --- */
+.btn {
+	position: relative;
+  top: 30px;
+	padding: 5px 25px 8px;
+	color: #FFF;
+	font-size: 20px;
+	font-weight: 700;
+	background-color: $color2;
+	border-radius: 7px;
+}
+.regis {
+  color: #2979FF;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 2.8;
+  padding: .5em 1.8em;
+  border-radius: 30px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  border: 1px solid #2979FF;
+  box-shadow: 0 0 0 rgba(0,0,0,0.18);
+}

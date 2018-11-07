@@ -3,17 +3,17 @@ Error: Undefined mixin 'transition'.
         on line 42 of /Applications/XAMPP/xamppfiles/htdocs/beruangair.github.io/sindonews/assets/scss/header.scss, in `transition'
         from line 42 of /Applications/XAMPP/xamppfiles/htdocs/beruangair.github.io/sindonews/assets/scss/header.scss
 
-37: 	i {
-38: 		display: inline-block;
-39: 		width: 30px;
-40: 		height: 20px;
-41: 		margin: 0 8px 0 0;
-42: 		@include transition(.3s);
-43: 		&:hover {
-44: 			opacity: .7;
-45: 		}
-46: 	}
-47: 	.en {
+37:   i {
+38:     display: inline-block;
+39:     width: 30px;
+40:     height: 20px;
+41:     margin: 0 8px 0 0;
+42:     @include transition(.3s);
+43:     &:hover {
+44:       opacity: .7;
+45:     }
+46:   }
+47:   .en {
 
 Backtrace:
 /Applications/XAMPP/xamppfiles/htdocs/beruangair.github.io/sindonews/assets/scss/header.scss:42:in `transition'
@@ -81,4 +81,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'transition'.\A         on line 42 of /Applications/XAMPP/xamppfiles/htdocs/beruangair.github.io/sindonews/assets/scss/header.scss, in `transition'\A         from line 42 of /Applications/XAMPP/xamppfiles/htdocs/beruangair.github.io/sindonews/assets/scss/header.scss\A \A 37: 	i {\A 38: 		display: inline-block;\A 39: 		width: 30px;\A 40: 		height: 20px;\A 41: 		margin: 0 8px 0 0;\A 42: 		@include transition(.3s);\A 43: 		&:hover {\A 44: 			opacity: .7;\A 45: 		}\A 46: 	}\A 47: 	.en {"; }
+  content: "Error: Undefined mixin 'transition'.\A         on line 42 of /Applications/XAMPP/xamppfiles/htdocs/beruangair.github.io/sindonews/assets/scss/header.scss, in `transition'\A         from line 42 of /Applications/XAMPP/xamppfiles/htdocs/beruangair.github.io/sindonews/assets/scss/header.scss\A \A 37:   i {\A 38:     display: inline-block;\A 39:     width: 30px;\A 40:     height: 20px;\A 41:     margin: 0 8px 0 0;\A 42:     @include transition(.3s);\A 43:     &:hover {\A 44:       opacity: .7;\A 45:     }\A 46:   }\A 47:   .en {"; }

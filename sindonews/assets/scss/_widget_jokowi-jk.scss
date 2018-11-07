@@ -1,0 +1,163 @@
+@charset 'utf-8';
+/* ==========================================================================
+Author        :  Arif Lutfhansah
+Create        :  19 Oktober 2018
+Last Update   :  19 Oktober 2018
+
+Contents  :
+  1: Widget 4 Tahun Jokowi JK Section
+  
+========================================================================== */
+
+$world_cup : #AC0C14;
+$world_cup_secondary : #1382B8;
+
+/*
+  Widget Jokowi JK
+-------------------------------------*/
+.jj {
+  width: 940px;
+  height: 178px;
+  margin: 0 0 20px 0;
+  .head {
+    position: relative;
+    height: 63px;
+    &:after {
+      position: relative;
+      top: -41px;
+      margin-bottom: -41px;
+      content: '';
+      border-bottom: 25px solid #FFF;
+      z-index: 99;
+    }
+    .images {
+      &:after {
+        position: absolute;
+        top: -11px;
+        right: 180px;
+        content: '';
+        border-left: 30px solid transparent;
+        border-bottom: 47px solid #FFF;
+      }
+      img {
+        position: relative;
+        top: -11px;
+        width: 180px;
+        padding: 14px 0 5px 27px;
+        background-color: #FFF;
+        z-index: 999;
+      }
+    }
+  }
+  .title {
+    position: relative;
+    padding: 14px 30px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    background-color: #CF1723;
+    z-index: 999;
+    &:after {
+      position: absolute;
+      top: 0;
+      right: -30px;
+      content: '';
+      border-right: 30px solid transparent;
+      border-bottom: 47px solid #CF1723;
+    }
+  }
+  .jj-ornamen {
+    width: 180px;
+  }
+  .widget-jj {
+    .carousel {
+      float: left;
+      left: -0.5px !important;
+      width: calc(100% - 84px) !important;
+      height: auto !important;
+      margin: 0 2px;
+      background-color: none !important;
+      li {
+        width: 200px;
+        height: 115px;
+        margin: 0 1.5px;
+        font-weight: 700;
+        background-color: #FFF;
+      }
+      img {
+        width: 200px;
+        height: 115px;
+        object-fit: cover;
+      }
+      .title-news {
+        position: relative;
+        top: -88px;
+        padding: 10px;
+        background: -webkit-linear-gradient(top, transparent 0px, rgba(0, 0, 0, 0.6) 50%, rgb(0, 0, 0) 100%);
+        a {
+          color: #FFF;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .prev, .next {
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 115px;
+    color: #FFF;
+    font-size: 45px;
+    text-align: center;
+    background-color: #CF1723;
+  }
+  .btn-block {
+    display: none;
+    a {
+      font-family: Tahoma,Geneva,sans-serif;
+      display: block;
+      padding: 15px;
+      color: #FFF;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  /*
+    Widget Jokowi JK
+  -------------------------------------*/
+  .jj {
+    width: 100%;
+    .head {
+      &:after {
+        display: none;
+      }
+      .images {
+        &:after {
+          display: none;
+        }
+        img {
+          width: 130px;
+          top: 0;
+          padding: 0;
+          background-color: transparent;
+        }
+      }
+    }
+    .title {
+      padding: 14px 10px;
+      font-size: 14px;
+    }
+  }
+  .btn-block {
+    display: block;
+  }
+}

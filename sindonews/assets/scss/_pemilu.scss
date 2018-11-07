@@ -1,0 +1,294 @@
+@charset 'utf-8';
+/* ==========================================================================
+Author        :  Arif Lutfhansah
+Create        :  19 Oktober 2018
+Last Update   :  19 Oktober 2018
+
+Contents  :
+  1: Pilkada 2019 Section
+  
+========================================================================== */
+
+$primary-color : #D70009;
+
+/*
+  Header
+-------------------------------------*/
+.header-top {
+  &.kanal {
+    background-color: $primary-color;
+  }
+}
+.header-bottom {
+  position: relative;
+  z-index: 99;
+  background-repeat: no-repeat;
+}
+/* --- Banner Header --- */
+.banner-header {
+  margin-top: 25px;
+  text-align: center;
+}
+/* --- Sosmed Kanal --- */
+.sosmed-kanal {
+  li {
+    a {
+      color: #FFF;
+      &:hover {
+        color: #EFDB36;
+      }
+    }
+  }
+}
+/* --- Subkanal Navigation ---- */
+.nav-subkanal {
+  margin: 25px 0;
+  .logo {
+    padding: 8px 0;
+  }
+  ul {
+    background-color: #232323;
+    border-bottom: 3px solid #D2B66D;
+  }
+  li {
+    display: inline-block;
+  }
+  .ornamen-nav {
+    width: 63px;
+  }
+  a {
+    display: block;
+    padding: 22px 12px;
+    color: #fff;
+    font: 16px Tahoma,Geneva,sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+.dropdown-content {
+  background-color: $primary-color;
+}
+
+/*
+  Main
+-------------------------------------*/
+main {
+  background-color: #FFF;
+}
+/* --- List News ---- */
+.list-news {
+  .title-fold-2 {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    width: 300px;
+    margin-left: -150px; /* Half the width */
+    z-index: 99;
+    padding: 14px 12px 16px;
+    color: #FFF;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: #D70009;
+    border-bottom: 3px solid #D2B66D;
+    .head {
+      position: relative;
+      font-size: 22px;
+      font-weight: 700;
+      text-align: center;
+      &:before {
+        position: absolute;
+        top: -14px;
+        left: -22px;
+        content: '';
+        border-left: 10px solid rgba(0, 0, 0, 0);
+        border-bottom: 11px solid #232323;
+      }
+      &:after {
+        position: absolute;
+        top: -14px;
+        right: -22px;
+        content: '';
+        border-right: 10px solid rgba(0, 0, 0, 0);
+        border-bottom: 11px solid #232323;
+      }
+    }
+  }
+  .big {
+    padding: 0;
+    .image {
+      width: 100%;
+      height: 407px;
+      img {
+        width: 100%;
+        height: 407px;
+      }
+    }
+    .caption {
+      position: relative;
+      top: -95px;
+      width: 100%;
+      margin-bottom: -95px;
+      padding: 15px 20px;
+      background: -webkit-linear-gradient(top, transparent 0, rgba(0,0,0,0.6) 50%, #000 100%);
+      background: -moz-linear-gradient(top, transparent 0, rgba(0,0,0,0.6) 50%, #000 100%);
+      background: -o-linear-gradient(top, transparent 0, rgba(0,0,0,0.6) 50%, #000 100%);
+      background: linear-gradient(top, transparent 0, rgba(0,0,0,0.6) 50%, #000 100%);
+      a {
+        height: 65px;
+        color: #FFF;
+      }
+    }
+  }
+  li {
+    background-color:#ECEFF1;
+    border-bottom: 1px solid #BDBDBD;
+  }
+  .header {
+    padding: 0;
+    time {
+      font-family: 'PT Sans', sans-serif;
+      color: $primary-color;
+      font-size: 13px;
+    }
+  }
+  a, .text {
+    font-family: 'PT Sans', sans-serif;
+  }
+}
+/* --- List Mini ---- */
+.list-mini {
+  .big {
+    padding: 0;
+    .image {
+      width: 100%;
+      height: auto;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .caption {
+      position: relative;
+      top: -75px;
+      width: 100%;
+      margin-bottom: -75px;
+      padding: 15px 10px;
+      background: -webkit-linear-gradient(top, transparent 0, rgba(0,0,0,0.6) 50%, #000 100%);
+      background: -moz-linear-gradient(top, transparent 0, rgba(0,0,0,0.6) 50%, #000 100%);
+      background: -o-linear-gradient(top, transparent 0, rgba(0,0,0,0.6) 50%, #000 100%);
+      background: linear-gradient(top, transparent 0, rgba(0,0,0,0.6) 50%, #000 100%);
+      a {
+        height: 44px;
+        color: #FFF;
+      }
+    }
+  }
+  li {
+    padding: 0 12px 0 0;
+    background-color: #F0F0F0;
+    border-bottom: 2px solid #FFF;
+  }
+  .image {
+    width: 80px;
+    height: 80px;
+    img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+    }
+  }
+  .caption {
+    width: 196px;
+    padding: 7px 0px;
+    a {
+      height: 66px;
+      overflow: hidden;
+      font-family: 'PT Sans', sans-serif;
+      color: #403F3F;
+      font-size: 16px;
+      line-height: 140%;
+    }
+  }
+}
+/* --- Button ---- */
+.btn-block {
+  background-color: $primary-color;
+  border-bottom: 3px solid #D2B66D;
+  a {
+    font-size: 18px;
+  }
+}
+
+/*
+  Footer
+-------------------------------------*/
+.footer-top {
+  background-color: #FFF;
+  background-image: url('../images/pemilu/ornamen_footer_pemilu.png');
+  background-repeat: no-repeat;
+  background-position: 0px 112px;
+  border: none;
+}
+/* --- Logo Footer ---- */
+.logo-footer {
+  position: relative;
+  left: 80px;
+  width: 399px;
+  height: 40px;
+  margin-bottom: 35px;
+  background-position: -6px -55px;
+}
+/* --- Sitemap ---- */
+.site-column {
+  a {
+    color: #084C8D;
+  }
+  span {
+    color: $primary-color;
+  }
+}
+/* --- Copyright ---- */
+.copyright {
+  padding: 15px 0;
+  background-color: #90BC42;
+}
+
+@media only screen and (min-width: 1083px) and (max-width: 1290px) {
+  /*
+    Header
+  -------------------------------------*/
+  .header-bottom {
+    height: auto !important;
+  }
+  /* --- Subkanal Navigation ---- */
+  .nav-subkanal {
+    a {
+      padding: 22px 6px !important;
+      font-size: 14px;
+    }
+  }
+  /* --- List Mini ---- */
+  .list-mini .caption {
+    width: 136px;
+}
+  /*
+    Footer
+  -------------------------------------*/
+  .footer-top {
+    background-size: 710px;
+    background-position: 0px 122px;
+  }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1082px) {
+  /*
+    Footer
+  -------------------------------------*/
+  .footer-top {
+    background-size: 620px;
+    background-position: 0px 168px;
+  }
+}

@@ -1,0 +1,55 @@
+@charset 'utf-8';
+/* ==========================================================================
+Author        :  Arif Lutfhansah
+Create        :  20 April 2018
+Last Update   :  20 April 2018
+
+Contents  :
+  1: Footer Section
+  
+========================================================================== */
+
+/*
+  Footer
+-------------------------------------*/
+footer {
+	position: relative;
+    top: 112px;
+	padding: 18px 0;
+	color: #FFF;
+	text-align: center;
+	background-color: $background;
+}
+/* --- Sosmed --- */
+.sosmed {
+	padding: 10px 0;
+	li {
+		display: inline-block;
+		padding: 0 5px 12px;
+	}
+	i {
+		position: relative;
+	    width: 128px;
+	    height: 128px;
+	    zoom: .4;
+	    &:hover {
+	    	opacity: .7;
+	    }
+	}
+	.facebook {
+		background-position: -7px 0px;
+	}
+	.twitter {
+		background-position: -144px 0px;
+	}
+	.instagram {
+		background-position: -283px 0px;
+	}
+	.youtube {
+		background-position: -556px 0px;
+	}
+}
+/* --- Copyright --- */
+.copyright {
+	font-weight: 700;
+}

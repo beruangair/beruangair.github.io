@@ -20,50 +20,50 @@ Contents  :
   Header Top
 -------------------------------------*/
 .header-top {
-	&.home {
-		background-color: #F5F5F5;
-	}
-	&.kanal {
-		background-color: #01579B;
-	}
+  &.home {
+    background-color: #F5F5F5;
+  }
+  &.kanal {
+    background-color: #01579B;
+  }
 }
 /* --- Language ---- */
 .language {
-	padding: 11px 0 7px;
-	margin-right: 45px;
-	&.home {
-		padding: 8px 0 5px;
-	}
-	i {
-		display: inline-block;
-		width: 30px;
-		height: 20px;
-		margin: 0 8px 0 0;
-		@include transition(.3s);
-		&:hover {
-			opacity: .7;
-		}
-	}
-	.en {
-		background-position: -110px -24px;
-	}
-	.id {
-		background-position: -110px -3px;
-	}
+  padding: 11px 0 7px;
+  margin-right: 45px;
+  &.home {
+    padding: 8px 0 5px;
+  }
+  i {
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    margin: 0 8px 0 0;
+    @include transition(.3s);
+    &:hover {
+      opacity: .7;
+    }
+  }
+  .en {
+    background-position: -110px -24px;
+  }
+  .id {
+    background-position: -110px -3px;
+  }
 }
 /* --- MNC Group ---- */
 .mnc-group {
-	position: relative;
-	left: 370px;
-	li {
-		display: inline-block;
-		padding: 11px 8px 9px 3px;
-		&:last-of-type {
-			a {
-				border-right: none;
-			}
-		}
-	}
+  position: relative;
+  left: 370px;
+  li {
+    display: inline-block;
+    padding: 11px 8px 9px 3px;
+    &:last-of-type {
+      a {
+        border-right: none;
+      }
+    }
+  }
   a {
     padding-right: 10px;
     color: #01579B;
@@ -154,21 +154,21 @@ Contents  :
 }
 /* --- Social Media ---- */
 .social {
-	li {
-	  display: inline-block;
-	  padding: 0 3px;
-	  margin: 20px 0 50px 0;
-	  color: #f3bb32;
-	  font-size: 16px;
-	  i {
-	  	width: 45px;
-		  padding: 12px 0;
-		  color: #fff;
-		  background: #282828;
-		  font-size: 20px;
-		  text-align: center;
-	  }
-	}
+  li {
+    display: inline-block;
+    padding: 0 3px;
+    margin: 20px 0 50px 0;
+    color: #f3bb32;
+    font-size: 16px;
+    i {
+      width: 45px;
+      padding: 12px 0;
+      color: #fff;
+      background: #282828;
+      font-size: 20px;
+      text-align: center;
+    }
+  }
 }
 
 /*

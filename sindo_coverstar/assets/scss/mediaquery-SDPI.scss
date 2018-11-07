@@ -1,0 +1,38 @@
+@charset 'utf-8';
+/* ==========================================================================
+Author        :  Arif Lutfhansah
+Create        :  20 April 2018
+Last Update   :  20 April 2018
+
+Source  :
+  1: Arif Framework The MIT License (MIT) Copyright (c) Arif Lutfhansah
+  2: Bootstrap Framework The MIT License (MIT) Copyright (c) Bootstrap
+  3: Materialize Framework The MIT License (MIT) Copyright (c) 2014-2017 Materialize
+
+Contents  :
+  1: Media Query for SDPI (width 769px-992px) Section
+
+  Copyright (c) 2018 Arif Lutfhansah
+  
+========================================================================== */
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+	/* --- About --- */
+  .row {
+    .pull-right, .pull-left {
+      float: none;
+    }
+    .description {
+      width: 100%;
+      .caption {
+        top: 50px;
+        text-align: center;
+      }
+    }
+    .image {
+      img {
+        margin: 0 auto;
+      }
+    }
+  }
+}

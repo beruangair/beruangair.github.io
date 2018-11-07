@@ -1,0 +1,240 @@
+@charset 'utf-8';
+/* ==========================================================================
+Author        :  Arif Lutfhansah
+Create        :  20 April 2018
+Last Update   :  20 April 2018
+
+Source  :
+  1: Arif Framework The MIT License (MIT) Copyright (c) Arif Lutfhansah
+  2: Bootstrap Framework The MIT License (MIT) Copyright (c) Bootstrap
+  3: Materialize Framework The MIT License (MIT) Copyright (c) 2014-2017 Materialize
+
+Contents  :
+  1: Media Query for SDPI (width 769px-992px) Section
+
+  Copyright (c) 2018 Arif Lutfhansah
+  
+========================================================================== */
+
+@media screen and (max-width: 992px) {
+	header {
+		height: 62px;
+	}
+	.logo {
+		position: relative;
+		left: 15px;
+		img {
+			margin: 27.5px auto;
+			zoom: .6;
+		}
+	}
+	main {
+		top: 62px;
+	}
+	/* --- Navigation ---- */
+	nav {
+		top: 0;
+		width: 100%;
+		display: none;
+		float: none;
+		background-color: #1A1A26;
+		ul {
+			padding-bottom: 15px;
+		}
+		li {
+			display: block;
+			a {
+				padding: 6px 12px;
+			    font-size: 16px;
+			    text-align: center;
+			}
+		}
+	}
+	.navbar {
+		display: block;
+		.navbar-toggle {
+		    position: relative;
+		    top: 14px;
+		    right: 14px;
+		    float: right;
+		    padding: 9px 10px;
+		    background-color: rgba(0, 0, 0, 0);
+		    background-image: none;
+		    border: 1px solid rgba(0, 0, 0, 0);
+		    border-radius: 4px;
+		    border-color: #EA8B2C;
+        outline: none;
+		    .sr-only {
+			    position: absolute;
+			    width: 1px;
+			    height: 1px;
+			    margin: -1px;
+			    padding: 0;
+			    overflow: hidden;
+			    clip: rect(0, 0, 0, 0);
+			    border: 0;
+			}
+			.icon-bar {
+			    display: block;
+			    width: 22px;
+			    height: 2px;
+			    border-radius: 1px;
+			    background-color: #888;
+			    + .icon-bar {
+				    margin-top: 4px;
+				}
+			}
+		}
+	}
+	.row {
+		margin: 0;
+    .pull-right, .pull-left {
+      float: none;
+    }
+    .description {
+      width: 100%;
+      .caption {
+        top: 50px;
+        padding: 0 15px;
+        font-size: 18px !important;
+        text-align: center;
+      }
+    }
+		.image {
+			width: 100%;
+      img {
+        width: 50%;
+        margin: 0 auto;
+      }
+		}
+	}
+	section {
+		padding: 80px 0;
+	}
+	.about {
+		padding: 50px 0;
+    &.row {
+      padding-top: 80px;
+      padding-bottom: 150px;
+    }
+		.image {
+			float: none;
+			width: 100%;
+			display: block;
+			margin: 0 auto;
+			img {
+				width: 50%;
+				margin: 0 auto;
+			}
+		}
+		.description {
+			float: none;
+			width: 100%;
+			display: block;
+			margin: 0 auto;
+			.title {
+				margin-bottom: 10px;
+    		margin-top: 40px;
+				font-size: 22px;
+        text-align: center;
+			}
+      .title2 {
+        font-size: 40px;
+        text-align: center;
+      }
+			.caption {
+				font-size: 16px;
+			}
+		}
+	}
+	.article {
+		padding: 30px 0;
+		.title {
+			font-size: 22px;
+		}
+		.item {
+			width: 100%;
+			margin: 10px 0 20px;
+		}
+		.caption {
+			font-size: 14px;
+		}
+		img {
+			width: 100%;
+		}
+	}
+	.btn {
+	    top: 3px;
+	    padding: 3px 16px 6px;
+	    font-size: 14px;
+	}
+	.registration {
+		padding: 30px 0;
+		.image {
+			float: none;
+			display: block;
+			margin: 0 auto;
+			img {
+				zoom: .4;
+			    margin: 0 auto 90px;
+			    display: block;
+			}
+		}
+		.description {
+			float: none;
+			width: 100%;
+			display: block;
+			margin: 0 auto;
+			.title, .caption {
+				padding: 0 15px
+			}
+			.title {
+				margin-bottom: 10px;
+    			margin-top: 20px;
+				font-size: 22px;
+			}
+			.caption {
+				font-size: 16px;
+			}
+		}
+		.btn {
+			width: 70px;
+			margin: 20px auto 0;
+		    text-align: center;
+		    display: block;
+		}
+	}
+	.video {
+		padding: 30px 0;
+		.title {
+			font-size: 22px;
+		}
+		.item {
+			.caption {
+				font-size: 14px;
+			}
+		}
+		video {
+			width: 70%;
+		}
+	}
+	.sponsor {
+		img {
+			&:first-of-type {
+				margin-bottom: 50px;
+			}
+		}
+	}
+	
+	/*
+	  Footer
+	-------------------------------------*/
+	footer {
+		position: relative;
+	    top: 62px;
+	}
+	/* --- Copyright --- */
+	.copyright {
+		font-size: 11px;
+	}
+}

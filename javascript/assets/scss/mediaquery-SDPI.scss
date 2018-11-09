@@ -1,0 +1,105 @@
+@charset 'utf-8';
+/* ==========================================================================
+Author        :  Arif Lutfhansah
+Create        :  20 April 2018
+Last Update   :  20 April 2018
+
+Source  :
+  1: Arif Framework The MIT License (MIT) Copyright (c) Arif Lutfhansah
+  2: Bootstrap Framework The MIT License (MIT) Copyright (c) Bootstrap
+  3: Materialize Framework The MIT License (MIT) Copyright (c) 2014-2017 Materialize
+
+Contents  :
+  1: Media Query for SDPI (width 769px-992px) Section
+
+  Copyright (c) 2018 Arif Lutfhansah
+  
+========================================================================== */
+
+/*
+  Header
+-------------------------------------*/
+/* --- Logo --- */
+.logo {
+  img {
+    padding: 92px 0;
+    zoom: .4;
+  }
+}
+/* --- Nav --- */
+nav {
+  ul {
+    a {
+      padding: 0 3px;
+    }
+  }
+}
+
+/*
+  Main
+-------------------------------------*/
+/* --- News --- */
+.news {
+  .title {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+.medium {
+  .news {
+    height: 335px;
+  }
+}
+.small {
+  .news {
+    img {
+      height: 100px;
+    }
+  }
+}
+/* --- Latest --- */
+.latest-list {
+  .col-md-4 {
+    height: 310px;
+  }
+}
+/* --- R Side --- */
+.r-side {
+  img {
+    width: 100%;
+  }
+}
+/* --- List News ---- */
+.list-news {
+  .item {
+    &:first-of-type {
+      img {
+        width: 255px;
+      }
+      .caption {
+        max-height: 115px;
+      }
+    }
+  }
+  .col-md-9 {
+    width: 340px;
+    .caption {
+      padding: 0;
+    }
+  }
+}
+/* --- List Mini ---- */
+.list-mini {
+  .caption {
+    width: 135px;
+  }
+}
+/* --- Detail News ---- */
+.detail-news {
+  .r-inside {
+    width: 15%;
+  }
+  .article {
+    width: 81%;
+  }
+}

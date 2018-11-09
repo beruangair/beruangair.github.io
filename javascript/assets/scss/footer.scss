@@ -1,0 +1,97 @@
+@charset 'utf-8';
+/* ==========================================================================
+Author        :  Arif Lutfhansah
+Create        :  20 April 2018
+Last Update   :  20 April 2018
+
+Contents  :
+  1: Footer Section
+  
+========================================================================== */
+
+/*
+  Footer
+-------------------------------------*/
+footer {
+  padding: 2.5em 0 3.8em;
+  background-color: #22252C;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.1), inset 0 -1px 0 rgba(0,0,0,0.1);
+}
+.nav-footer, .contributor, .sitemap, .copyright {
+  border-top: 1px solid #3e4047;
+  box-shadow: 0 -1px 0 #000;
+}
+
+/* --- Logo Footer --- */
+.logo-footer {
+  margin-bottom: 15px;
+  zoom: .6;
+}
+/* --- Nav Footer --- */
+.nav-footer {
+  li {
+    display: inline-block;
+    padding-right: 30px;
+    a {
+      color: #FFFFFF;
+      font-weight: 300;
+      text-transform: uppercase;
+    }
+  }
+}
+/* --- Contributor --- */
+.contributor {
+  padding: 15px 0;
+  font-size: 12px;
+  .col-md-2 {
+    height: 54px;
+    margin-bottom: 8px;
+  }
+  .column {
+    margin-top: 8px;
+  }
+  .head {
+    color: #999;
+  }
+  .name {
+    color: #FFFFFF;
+  }
+}
+/* --- Sitemap --- */
+.sitemap {
+  padding: 15px 0;
+  .col-md-2 {
+    margin-bottom: 8px;
+  }
+  .head {
+    color: #999;
+  }
+  ul {
+    margin: 0;
+  }
+  a {
+    color: #FFFFFF;
+  }
+}
+/* --- Copyright --- */
+.copyright {
+  padding-top: 10px;
+  color: #FFFFFF;
+  font-size: 12px;
+  .privacy {
+    ul {
+      margin: 0;
+    }
+    li {
+      display: inline-block;
+      padding: 8px;
+      line-height: 0;
+      &:first-of-type {
+        border-right: 1px solid #FFFFFF;
+      }
+    }
+  }
+  a {
+    color: #FFFFFF;
+  }
+}

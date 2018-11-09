@@ -1,0 +1,66 @@
+@charset 'utf-8';
+/* ==========================================================================
+Author        :  Arif Lutfhansah
+Create        :  20 April 2018
+Last Update   :  20 April 2018
+
+Source  :
+  1: Arif Framework The MIT License (MIT) Copyright (c) Arif Lutfhansah
+  2: Bootstrap Framework The MIT License (MIT) Copyright (c) Bootstrap
+  3: Materialize Framework The MIT License (MIT) Copyright (c) 2014-2017 Materialize
+
+Contents  :
+  1: Header Section
+
+  Copyright (c) 2018 Arif Lutfhansah
+  
+========================================================================== */
+
+/*
+  Header
+-------------------------------------*/
+/* --- Logo --- */
+.logo {
+  height: 85px;
+  margin-right: 55px;
+  img {
+    width: 130px;
+    padding: 26px 0;
+  }
+}
+/* --- Nav --- */
+nav {
+  a {
+    color: #05347B;
+  }
+}
+/* --- Button --- */
+.button {
+  padding: 12px 48px;
+  color: #1C59B8;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  border-radius: 50px;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -o-animation-duration: 2s;
+  animation-duration: 2s;
+  &.square {
+    font-size: 16px;
+    border-radius: 5px;
+    letter-spacing: -0.6px;
+  }
+  &.grey {
+    background: #D5E3F9;
+    margin-right: 15px;
+  }
+  &.green {
+    color: #FFF;
+    background: #03DC80;
+  }
+}
+/* --- Slicknav --- */
+.slicknav {
+  display: none;
+}

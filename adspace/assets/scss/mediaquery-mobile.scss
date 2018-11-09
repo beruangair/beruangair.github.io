@@ -1,0 +1,106 @@
+@charset 'utf-8';
+/* ==========================================================================
+Author        :  Arif Lutfhansah
+Create        :  20 April 2018
+Last Update   :  20 April 2018
+
+Source  :
+  1: Arif Framework The MIT License (MIT) Copyright (c) Arif Lutfhansah
+  2: Bootstrap Framework The MIT License (MIT) Copyright (c) Bootstrap
+  3: Materialize Framework The MIT License (MIT) Copyright (c) 2014-2017 Materialize
+
+Contents  :
+  1: Media Query for Mobile (min width 769px) Section
+
+  Copyright (c) 2018 Arif Lutfhansah
+  
+========================================================================== */
+
+
+/*
+  Header
+-------------------------------------*/
+/* --- Logo --- */
+.logo {
+  float: none;
+  img {
+    padding: 23px 0;
+    zoom: .8;
+  }
+}
+/* --- Navigation --- */
+.navigation, .about {
+  display: none;
+}
+/* --- Sidenav --- */
+.sidenav {
+  
+}
+
+#nav-mobile {
+  display: none;
+}
+/* --- Slicknav --- */
+.slicknav {
+  display: block;
+}
+
+/*
+  Main
+-------------------------------------*/
+.content {
+  margin-top: 10px;
+}
+.col-md-9, .col-md-6, .col-md-3 {
+  width: 100%;
+  padding: 0;
+}
+/* --- Mainvisual --- */
+.mainvisual {
+  padding: 0 15px;
+  margin-bottom: 120px;
+  height: auto;
+  text-align: center;
+  .pull-left, .pull-right {
+    float: none;
+  }
+  .caption {
+    top: 30px;
+  }
+  .image {
+    top: 70px;
+  }
+  h1 {
+    width: 100%;
+    font-size: 28px;
+    line-height: 34px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 23px;
+  }
+}
+
+/*
+  Footer
+-------------------------------------*/
+footer {
+  padding: 1.5em 1em 2em;
+}
+/* --- Footer Menu ---- */
+.footer-menu {
+  .col-md-3 {
+    padding: 0;
+    margin-bottom: 40px;
+  }
+}
+/* --- Small Foot ---- */
+.smallfoot {
+  .pull-left, .pull-right {
+    float: none;
+    text-align: center;
+  }
+  .terms {
+    margin-bottom: 8px;
+  }
+}

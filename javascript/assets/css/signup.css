@@ -1,0 +1,40 @@
+/*
+Error: Illegal nesting: Nothing may be nested beneath variable declarations.
+        on line 3 of /Applications/XAMPP/xamppfiles/htdocs/beruangair.github.io/ui/sign_up/assets/js/signup.js
+
+1: // Change Icon Email When Form Email Fill
+2: $('.email').on("change keyup paste",
+3:   function() {
+4:     if($(this).val()) {
+5:       $('.icon-email').addClass("next");
+6:     } else {
+7:       $('.icon-email').removeClass("next");
+8:     }
+
+Backtrace:
+/Applications/XAMPP/xamppfiles/htdocs/beruangair.github.io/ui/sign_up/assets/js/signup.js:3
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/engine.rb:765:in `parse_variable'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/engine.rb:650:in `parse_line'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/engine.rb:539:in `build_tree'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/engine.rb:558:in `block in append_children'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/engine.rb:557:in `each'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/engine.rb:557:in `append_children'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/engine.rb:417:in `_to_tree'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/engine.rb:290:in `render'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/plugin/compiler.rb:464:in `update_stylesheet'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/plugin/compiler.rb:209:in `each'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/plugin.rb:82:in `update_stylesheets'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/exec/sass_scss.rb:338:in `watch_or_update'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/exec/base.rb:50:in `parse'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/exec/base.rb:18:in `parse!'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/bin/sass:13:in `<top (required)>'
+/usr/local/bin/sass:22:in `load'
+/usr/local/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Illegal nesting: Nothing may be nested beneath variable declarations.\A         on line 3 of /Applications/XAMPP/xamppfiles/htdocs/beruangair.github.io/ui/sign_up/assets/js/signup.js\A \A 1: // Change Icon Email When Form Email Fill\A 2: $('.email').on(\"change keyup paste\",\A 3:   function() {\A 4:     if($(this).val()) {\A 5:       $('.icon-email').addClass(\"next\");\A 6:     } else {\A 7:       $('.icon-email').removeClass(\"next\");\A 8:     }"; }

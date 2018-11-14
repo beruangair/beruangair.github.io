@@ -1,5 +1,5 @@
 // Change Icon Email When Form Email Fill
-$('.email').on("change keyup paste",
+$('#email').on("change keyup paste",
   function() {
     if($(this).val()) {
       $('.icon-email').addClass("next");
@@ -15,7 +15,7 @@ $('.next-button.email').click(
     $('.password-section').removeClass("folded");
   }
 );
-$('.password').on("change keyup paste",
+$('#password').on("change keyup paste",
   function() {
     if($(this).val()) {
       $('.icon-lock').addClass("next");
@@ -31,7 +31,7 @@ $('.next-button.password').click(
     $('.repeat-password-section').removeClass("folded");
   }
 );
-$('.repeat-password').on("change keyup paste", 
+$('#repeat-password').on("change keyup paste", 
   function() {
     if($(this).val()) {
       $('.icon-repeat-lock').addClass("next");

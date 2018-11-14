@@ -51,6 +51,12 @@ $input-height: 75px;
       color: #9FACB6; 
       font-size: 17px;
     }
+    #status {
+      position: absolute;
+      right: 5px;
+      bottom: 5px;
+      font-size: 14px;
+    }
   }
   form {
     position: relative;
@@ -96,6 +102,13 @@ $input-height: 75px;
     &.fold-up {
       margin-top: -$input-height;
     }
+  }
+  #show-password {
+    position: absolute;
+    top: 26px;
+    right: 80px;
+    color: #8f8fd6;
+    cursor: pointer;
   }
   form input {
     background: lighten(rgb(243, 243, 251), 5%);

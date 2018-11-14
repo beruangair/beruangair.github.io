@@ -3,7 +3,7 @@ Error: Illegal nesting: Nothing may be nested beneath variable declarations.
         on line 3 of /Applications/XAMPP/xamppfiles/htdocs/beruangair.github.io/ui/sign_up/assets/js/signup.js
 
 1: // Change Icon Email When Form Email Fill
-2: $('.email').on("change keyup paste",
+2: $('#email').on("change keyup paste",
 3:   function() {
 4:     if($(this).val()) {
 5:       $('.icon-email').addClass("next");
@@ -37,4 +37,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Illegal nesting: Nothing may be nested beneath variable declarations.\A         on line 3 of /Applications/XAMPP/xamppfiles/htdocs/beruangair.github.io/ui/sign_up/assets/js/signup.js\A \A 1: // Change Icon Email When Form Email Fill\A 2: $('.email').on(\"change keyup paste\",\A 3:   function() {\A 4:     if($(this).val()) {\A 5:       $('.icon-email').addClass(\"next\");\A 6:     } else {\A 7:       $('.icon-email').removeClass(\"next\");\A 8:     }"; }
+  content: "Error: Illegal nesting: Nothing may be nested beneath variable declarations.\A         on line 3 of /Applications/XAMPP/xamppfiles/htdocs/beruangair.github.io/ui/sign_up/assets/js/signup.js\A \A 1: // Change Icon Email When Form Email Fill\A 2: $('#email').on(\"change keyup paste\",\A 3:   function() {\A 4:     if($(this).val()) {\A 5:       $('.icon-email').addClass(\"next\");\A 6:     } else {\A 7:       $('.icon-email').removeClass(\"next\");\A 8:     }"; }

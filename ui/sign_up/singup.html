@@ -24,10 +24,11 @@
       <div class="head">
         <h1>Sign Up</h1>
         <p>Fill in all informations</p>
+        <span id="status"></span>
       </div>
       <form>
         <div class="input-section email-section">
-          <input class="email" type="email" placeholder="ENTER YOUR E-MAIL HERE" autocomplete="off"/>
+          <input id="email" type="email" placeholder="YOUR EMAIL" autocomplete="off"/>
           <input id="email_val" type="hidden" value="">
           <div class="animated-button">
             <span class="icon-email"><i class="material-icons">email</i></span>
@@ -35,7 +36,7 @@
           </div>
         </div>
         <div class="input-section password-section folded">
-          <input class="password" type="password" placeholder="ENTER YOUR PASSWORD HERE"/>
+          <input id="password" type="password" placeholder="YOUR PASSWORD" onkeyup="passwordStrength(this.value)"/><i id="show-password" class="material-icons" onclick="passwordShow()">remove_red_eye</i>
           <input id="password_val" type="hidden" value="">
           <div class="animated-button">
             <span class="icon-lock"><i class="material-icons">lock</i></i></span>
@@ -43,7 +44,7 @@
           </div>
         </div>
         <div class="input-section repeat-password-section folded">
-          <input class="repeat-password" type="password" placeholder="REPEAT YOUR PASSWORD HERE"/>
+          <input id="repeat-password" type="password" placeholder="REPEAT YOUR PASSWORD"/><i id="show-password" class="material-icons" onclick="repasswordShow()">remove_red_eye</i>
           <input id="repeatpassword_val" type="hidden" value="">
           <div class="animated-button">
             <span class="icon-repeat-lock"><i class="material-icons">lock</i></span>
@@ -61,8 +62,64 @@
   <script src='assets/js/materialize.min.js'></script> <!-- Materialize -->
   <script src='assets/js/signup.js'></script> <!-- Sign Up -->
 	<script>
-		$(document).ready(function() {
-		});
+    var password = document.getElementById("password");
+    var repeatPassword = document.getElementById("repeat-password");
+    var buttonShow = document.getElementById("show-password");
+    // Check Password Strength
+    function passwordStrength(p) {
+      var status = document.getElementById("status");
+      var regex = new Array();
+      regex.push("[A-Z]");
+      regex.push("[a-z]");
+      regex.push("[0-9]");
+      regex.push("[!@#$%^&*]");
+
+      var passed = 0;
+      var x = 0;
+      var regexLength = regex.length;
+      for(x = 0; x < regexLength; x++) {
+        if(new RegExp(regex[x]).test(p)) {
+          console.log(passed++);
+        }
+      }
+
+      var strength = null;
+      var color = null;
+      switch(passed) {
+        case 0:
+        case 1:
+        case 2:
+          strength = "Not Sequre";
+          color = "#FF3232";
+          break;
+        case 3:
+          strength = "Moderate";
+          color = "#E1D441";
+          break;
+        case 4:
+          strength = "Sequre";
+          color = "#27D644";
+      }
+
+      status.innerHTML = strength;
+      status.style.color = color;
+    }
+		// Show Password
+    function passwordShow() {
+      if( password.type === "password") {
+        password.type = "text";
+      } else {
+        password.type = "password";
+      }
+    }
+    // Show Repeat Password
+    function repasswordShow() {
+      if(repeatPassword.type === "password") {
+        repeatPassword.type = "text";
+      } else {
+        repeatPassword.type = "password";
+      }
+    }
 	</script>
 </body>
 </html>

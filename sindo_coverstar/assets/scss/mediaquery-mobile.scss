@@ -24,7 +24,7 @@ Contents  :
 		position: relative;
 		left: 15px;
 		img {
-			margin: 27.5px auto;
+			margin: 8.5px auto;
 			zoom: .6;
 		}
 	}
@@ -219,11 +219,12 @@ Contents  :
 		}
 	}
 	.sponsor {
-		img {
-			&:first-of-type {
-				margin-bottom: 50px;
-			}
-		}
+    .pull-right, .pull-left {
+      float: none;
+    }
+    .inner {
+      width: 100%;
+    }
 	}
 	
 	/*

@@ -96,3 +96,23 @@ Contents  :
 .swipe-tab-content {
   padding: 15px 20px;
 }
+/* --- Collabsible --- */
+.collapsible-body {
+  padding: 2rem 4rem;
+  .spec {
+    margin-bottom: 20px;
+  }
+  span {
+    color: #444E5B;
+    font-size: 18px;
+  }
+  ul {
+    margin-top: 15px;
+  }
+  li {
+    padding-bottom: 10px;
+    color: #6A7A8E;
+    font-size: 14px;
+    list-style-type: square;
+  }
+}

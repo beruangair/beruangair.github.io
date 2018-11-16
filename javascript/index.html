@@ -25,8 +25,19 @@
 	</main>
 	<script src='assets/js/jquery-1.10.2.min.js'></script> <!-- jQuery -->
 	<script>
-    var x = "John 'W' Doe";
-    console.log(x);
+    var test = "ABBA";
+    var len = test.length;
+    var i, slice;
+    var result = "";
+    for (i = 0; i <= len; i++) {
+      if (i % 2 == 1) {
+        var slice = test.slice(i, i-1);
+      } else {
+        var slice = test.slice(i, i+1);
+      }
+      var result = result + slice;
+    }
+    document.getElementById('root').innerHTML = result;
 	</script>
 </body>
 </html>

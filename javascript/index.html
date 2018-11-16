@@ -24,20 +24,23 @@
     <button type="button" onClick="document.getElementById('root').innerHTML = Date()"></button>
 	</main>
 	<script src='assets/js/jquery-1.10.2.min.js'></script> <!-- jQuery -->
-	<script>
+  <script>
+    alert("I\'m Javascript!");
+  </script>
+	<!---<script>
     var test = "ABBA";
     var len = test.length;
     var i, slice;
     var result = "";
     for (i = 0; i <= len; i++) {
       if (i > 2) {
-
+        var slice = test.slice(i, i+1);
       } else {
         var slice = test.slice(i, i+1);
       }
       var result = result + slice;
     }
     document.getElementById('root').innerHTML = result;
-	</script>
+	</script>-->
 </body>
 </html>

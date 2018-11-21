@@ -1,0 +1,45 @@
+@charset 'utf-8';
+/* ==========================================================================
+Author        :  Arif Lutfhansah
+Create        :  20 April 2018
+Last Update   :  20 April 2018
+
+Contents  :
+  1: Footer Section
+  
+========================================================================== */
+
+/*
+  Footer
+-------------------------------------*/
+footer {
+  background-color: #353F47;
+}
+/* --- Sitemap --- */
+.sitemap {
+  li {
+    display: inline-block;
+    margin-right: 10px;
+    padding-right: 15px;
+    line-height: 15px;
+    border-right: 1px solid #515F67;
+    text-transform: uppercase;
+    &:last-of-type {
+      padding: 0;
+      margin: 0;
+      border-right: none;
+    }
+    a {
+      color: #515F67;
+      font-size: 12px;
+      font-weight: 700;
+    }
+  }
+}
+/* --- Copyright --- */
+.copyright {
+  color: #515F67;
+  font-size: 12px;
+    font-weight: 700;
+  text-align: right;
+}

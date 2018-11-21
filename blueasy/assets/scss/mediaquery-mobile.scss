@@ -1,0 +1,135 @@
+@charset 'utf-8';
+/* ==========================================================================
+Author        :  Arif Lutfhansah
+Create        :  20 April 2018
+Last Update   :  20 April 2018
+
+Source  :
+  1: Arif Framework The MIT License (MIT) Copyright (c) Arif Lutfhansah
+  2: Bootstrap Framework The MIT License (MIT) Copyright (c) Bootstrap
+  3: Materialize Framework The MIT License (MIT) Copyright (c) 2014-2017 Materialize
+
+Contents  :
+  1: Media Query for Mobile (min width 769px) Section
+
+  Copyright (c) 2018 Arif Lutfhansah
+  
+========================================================================== */
+
+/*
+  Header
+-------------------------------------*/
+/* --- Nav --- */
+nav {
+  height: 80px;
+  .container {
+    position: relative;
+    top: -27px;
+  }
+}
+#nav-mobile {
+  display: none;
+}
+.navbar-fixed {
+  height: 80px;
+}
+.slicknav {
+  display: block;
+  padding: 0;
+}
+
+/*
+  Body
+-------------------------------------*/
+section {
+  padding: 80px 20px;
+}
+/* --- Button --- */
+.button {
+  display: block;
+  text-align: center;
+}
+.button-flat {
+  width: 250px;
+  margin: 0 auto;
+}
+/* --- Mainvisual --- */
+.mainvisual {
+  .tagline {
+    width: 100%;
+    font-size: 22px;
+  }
+}
+/* --- Caption --- */
+.caption {
+  text-align: center;
+}
+/* --- Services --- */
+.services {
+  .col-md-3 {
+    padding: 0;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+}
+/* --- Portfolio --- */
+.portofolio {
+  .nav-section {
+    margin-bottom: 20px;
+    li {
+      padding: 5px 3px;
+    }
+  }
+}
+/* --- Video --- */
+.video {
+  background-color: #515F67;
+  .title_head {
+    color: #FFF;
+  }
+  .caption {
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  video {
+    top: 40px;
+    margin-bottom: 0;
+  }
+}
+/* --- Contact --- */
+.contact {
+  .pull-left, .pull-right {
+    float: none;
+  }
+  .pull-right {
+    margin-bottom: 20px;
+  }
+  .field {
+    input {
+      width: 100%;
+    }
+  }
+  .column, .area {
+    padding: 0 15px;
+  }
+}
+/* --- Title Head --- */
+.title_head {
+  width: 100%;
+  text-align: center;
+  &:after {
+    border-bottom: none;
+  }
+}
+
+/*
+  Footer
+-------------------------------------*/
+.sitemap .pull-right, .sitemap .pull-left {
+  float: none;
+  text-align: center;
+}
+.copyright {
+  margin-top: 5px;
+  text-align: center;
+}

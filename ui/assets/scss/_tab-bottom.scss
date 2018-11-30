@@ -1,0 +1,52 @@
+@charset 'utf-8';
+/* ==========================================================================
+Author        :  Arif Lutfhansah
+Create        :  29 November 2018
+Last Update   :  29 November 2018
+
+Source  :
+  1: Arif Framework The MIT License (MIT) Copyright (c) Arif Lutfhansah
+  2: Bootstrap Framework The MIT License (MIT) Copyright (c) Bootstrap
+  3: Materialize Framework The MIT License (MIT) Copyright (c) 2014-2017 Materialize
+
+Contents  :
+  1: Tab Bottom Section
+
+  Copyright (c) 2018 Arif Lutfhansah
+  
+========================================================================== */
+
+/*
+  Tab Bottom
+-------------------------------------*/
+#tab-bottom {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  ul {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+  }
+  a {
+    height: 36px;
+    display: block;
+    padding: 16px 0 5px;
+    text-align: center;
+    &:hover {
+      svg {
+        color: #444D5B;
+      }
+    }
+  }
+  svg {
+    color: #B4BBC4;
+  }
+  .round-icon {
+    width: 4px;
+    height: 4px;
+    margin: 7px auto 0;
+    background-color: #FB4758;
+    border-radius: 50%;
+  }
+}

@@ -1,0 +1,287 @@
+@charset 'utf-8';
+/* ==========================================================================
+Author        :  Arif Lutfhansah
+Create        :  20 April 2018
+Last Update   :  20 April 2018
+
+Source  :
+  1: Arif Framework The MIT License (MIT) Copyright (c) Arif Lutfhansah
+  2: Bootstrap Framework The MIT License (MIT) Copyright (c) Bootstrap
+  3: Materialize Framework The MIT License (MIT) Copyright (c) 2014-2017 Materialize
+
+Contents  :
+  1: Media Query for Mobile (min width 769px) Section
+
+  Copyright (c) 2018 Arif Lutfhansah
+  
+========================================================================== */
+
+
+/*
+  Header
+-------------------------------------*/
+/* --- Logo --- */
+.logo {
+  img {
+    padding: 23px 0;
+    zoom: .4;
+  }
+}
+/* --- Nav --- */
+nav {
+  height: 55px;
+  a.sidenav-trigger {
+    height: 55px;
+    line-height: 55px;
+    i {
+      height: 55px;
+      line-height: 55px;
+    }
+  }
+  ul {
+    a {
+      padding: 0 4px;
+    }
+  }
+}
+#nav-mobile {
+  display: none;
+}
+/* --- Slicknav --- */
+.slicknav {
+  display: block;
+}
+
+/*
+  Main
+-------------------------------------*/
+.content {
+  margin-top: 10px;
+}
+.col-md-9, .col-md-6, .col-md-3 {
+  width: 100%;
+  padding: 0;
+}
+/* --- Carousel --- */
+.carousel {
+  height: 500px;
+  .carousel-item {
+    top: -150px;
+    width: 100%;
+    height: auto;
+    .category {
+      padding: 0.5em 1em 0.2em;
+      font-size: 12px;
+    }
+    .title {
+      padding: 0 8px;
+      margin: 20px 0 10px;
+      font-size: 24px;
+    }
+    .caption {
+      padding: 0 8px;
+      font-size: 16px;
+    }
+  }
+}
+/* --- R Center --- */
+.r-center {
+  width: 100%;
+  img {
+    width: 100%;
+  }
+}
+/* --- News --- */
+.news {
+  .category, .title, .caption, .author {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .title {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .author {
+    padding-top: 20px;
+  }
+}
+.big {
+  .news {
+    .title {
+      font-size: 26px;
+      line-height: 32px;
+    }
+  }
+}
+.medium {
+  .news {
+    height: auto;
+    &.col-md-6 {
+      &:nth-child(odd), &:nth-child(even) {
+        padding: 0;
+      }
+      &:nth-child(odd) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+.small {
+  .news {
+    margin-bottom: 20px;
+    &:nth-child(odd), &:nth-child(even) {
+      padding: 0;
+    }
+    img {
+      height: auto;
+    }
+  }
+}
+/* --- Latest --- */
+.latest-list {
+  .col-md-4 {
+    height: auto;
+    margin-bottom: 20px;
+  }
+}
+/* --- R Side --- */
+.r-side {
+  img {
+    width: 100%;
+  }
+}
+/* --- Head --- */
+.head-title {
+  h2 {
+    width: 200px;
+    margin: 0;
+  }
+  .btn {
+    top: -36px;
+    right: 5px;
+  }
+}
+/* --- List News ---- */
+.list-news {
+  .item {
+    border: none;
+    &:first-of-type {
+      img {
+        width: 100%;
+      }
+      .caption {
+        max-height: 115px;
+      }
+    }
+    img {
+      width: 100%;
+    }
+  }
+  .field-news {
+    padding: 0 15px;
+    margin-top: 10px;
+  }
+  .col-md-3 {
+    width: 100%;
+    .caption {
+      padding: 0;
+    }
+  }
+  .col-md-9 {
+    width: 100%;
+    .caption {
+      padding: 0;
+    }
+  }
+  .detail {
+    margin-bottom: 0;
+  }
+}
+/* --- List Mini ---- */
+.list-mini {
+  .caption {
+    width: 85%;
+  }
+}
+/* --- Detail News ---- */
+.detail-news {
+  .category {
+    font-size: 14px;
+  }
+  .title{
+    font-size: 24px;
+  }
+  .author {
+    color: #EEE;
+    padding-bottom: 3px;
+  }
+  .date {
+    color: #CACACA;
+    font-size: 12px;
+  }
+  .caption-image {
+    padding: 7px 10px;
+  }
+  .column {
+    margin: 25px 0;
+  }
+  .r-inside {
+    display: none;
+  }
+  .article {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+
+/*
+  Footer
+-------------------------------------*/
+footer {
+  padding: 1.5em 1em 2em;
+}
+/* --- Logo Footer --- */
+.logo-footer {
+  text-align: center;
+}
+/* --- Nav Footer --- */
+.nav-footer {
+  padding: 0 10px;
+  ul {
+    li {
+      display: block;
+      padding: 0;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+  }
+}
+/* --- Contributor --- */
+.contributor {
+  text-align: center;
+  .col-md-2 {
+    height: 40px;
+  }
+}
+/* --- Sitemap --- */
+.sitemap{
+  text-align: center;
+  .col-md-2 {
+    margin-bottom: 12px;
+  }
+}
+/* --- Copyright --- */
+.copyright {
+  a {
+    font-size: 10px;
+  }
+  .create-by-arif-lutfhansah {
+    font-size: 10px;
+  }
+  .privacy {
+    line-height: 1.2;
+    li {
+      padding: 0 5px;
+    }
+  }
+}
